@@ -1,0 +1,1141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://flog.youthwant.com.tw/favicon.ico" type="image/ico">
+    <title>新版首頁</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">    
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/skin.css">-->
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand c-navbar-brand" href="#">
+                    <img src="./images/public/logo-font-color.png" width="100" height="50">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">最新</a></li>
+                </ul>
+                <!--會員登入-->
+                <form action="" class="navbar-form navbar-right">
+                    <a class="btn btn-primary border-white" data-toggle="modal" data-target="#myModal"><i class="fa fa-user fa-fw" aria-hidden="true"></i>會員登入</a>
+                </form>
+                <form action="" class="navbar-form navbar-right">
+                    <a class="btn btn-primary border-white" data-toggle="modal" data-target="#ModalLoading">空的燈箱</a>
+                </form>
+                <form action="" class="navbar-form navbar-right">
+                    <a class="btn btn-primary border-white" data-toggle="modal" data-target="#multiLanguage">多語系切換</a>
+                </form>
+                <!--會員姓名-->
+                <ul class="nav navbar-nav navbar-right c-couple-line" style="display: none;">
+                    <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
+                                Hi,Amber
+                                <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>個人主頁</a></li>
+                            <li><a href=""><i class="fa fa-download" aria-hidden="true"></i>立即備份</a></li>
+                            <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i>樣式設定</a></li>
+                            <li><a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i>隱私設定</a></li>
+                            <li><a href=""><i class="fa fa-star" aria-hidden="true"></i>我的收藏</a></li>
+                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i>語言切換</a></li>
+                            <li class="divider"></li>
+                            <li><a href=""><i class="fa fa-power-off" aria-hidden="true"></i>登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--搜尋-->
+                <form action="" class="navbar-form c-navbar-form">
+                    <div class="input-group">
+                        <input type="text" name="" class="border-white form-control">
+                        <span class="input-group-btn">
+                            <div class="btn-group dropdown">
+                                <button class="btn btn-default border-white dropdown-toggle" data-toggle="dropdown" id="dropmenu-tool" aria-expanded="false">
+                                    搜尋此人
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                                    <li><a href="">搜尋此人</a></li>
+                                    <li><a href="">搜尋全部</a></li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn btn-primary border-white">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                搜尋
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
+    <div class="c-login-heading" style="margin-top: -20px;">
+        <div class="container">
+            <div class="logo">
+                <img src="http://flog.youthwant.com.tw/themes/website/images/logo_big.png">
+            </div>
+            <div class="main">
+                <h1>
+                    <span>輕鬆備份、非試不可</span>
+                    <br>
+                    <span>完整保存臉書動態，搜尋回憶更簡單</span>
+                </h1>        
+                <p>
+                    flog, your Facebook Log
+                </p>
+                <div class="btn-wrap">
+                    <a href="" class="btn btn-primary btn-block btn-lg" data-toggle="modal" data-target="#myModal">
+                        <img src="http://flog.youthwant.com.tw/themes/website/images/logo.png" alt="">
+                        <span>立即備份Facebook</span>
+                    </a>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <div class="container">       
+        <div class="c-user-tag" style="display: none;">
+            <a href="" class="">Amber 1</a>
+            <a href="" class="">Amber 2</a>
+            <a href="" class="">Amber 3</a>
+            <a href="" class="">Amber 4</a>
+            <a href="" class="">Amber 5</a>
+            <a href="" class="">Amber 6</a>
+            <a href="" class="">Amber 7</a>
+            <a href="" class="">Amber 8</a>
+            <a href="" class="">Amber 9</a>
+            <a href="" class="">Amber 10</a>
+            <a href="" class="">Amber 11</a>
+            <a href="" class="">Amber 12</a>
+            <a href="" class="">Amber 13</a>
+            <a href="" class="">Amber 14</a>
+            <a href="" class="">Amber 15</a>
+            <a href="" class="">Amber 16</a>
+            <a href="" class="">Amber 17</a>
+            <a href="" class="">Amber 18</a>
+            <a href="" class="">Amber 19</a>
+            <a href="" class="">Amber 20</a>
+            <a href="" class="">Amber 21</a>
+            <a href="" class="">Amber 22</a>
+            <a href="" class="">Amber 23</a>
+            <a href="" class="">Amber 24</a>
+            <a href="" class="">Amber 25</a>
+            <a href="" class="">Amber 26</a>
+            <a href="" class="">Amber 27</a>
+            <a href="" class="">Amber 28</a>
+            <a href="" class="">Amber 29</a>
+            <a href="" class="">Amber 30</a>
+            <a href="" class="">Amber 31</a>
+            <a href="" class="">Amber 32</a>
+            <a href="" class="">Amber 33</a>
+            <a href="" class="">Amber 34</a>
+            <a href="" class="">Amber 35</a>
+            <strong class="color-gray">和<a href="" class="font-bold">137412</a>最近使用flog</strong>
+        </div>
+        <section>
+            <div class="page-header">
+                <h4>熱門粉絲團</h4>
+                <div class="cloud"></div>
+            </div>
+            <div class="c-slide-wrap">
+                <div class="loading-block" style="display:none;">
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                </div>
+                <div class="regular5 slider">
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蛋黃哥</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蛋黃哥</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="c-slide-item">
+                    <a href="#">
+                        <div class="circle">
+                            <img src="http://img.chinatimes.com/newsphoto/2016-03-24/656/20160324005706.jpg">
+                        </div>
+                        <div class="title">
+                            <h3>蜷川實花</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="page-header">
+                <h4>精選主題</h4>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <a href="" class="c-theme theme-1">
+                        <h2>樂高玩創意</h2>
+                        <div class="c-media-wrap">
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>賞花～</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>綠活說這路不情龍童氣；傳聲兩，長能前傷上難。白你更朋方！不認究手件美了電工分間上安天天水安國沒強完我調設。</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="hashTag.html" class="c-theme theme-2">
+                        <h2>馬拉松</h2>
+                        <div class="c-media-wrap">
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>賞花～</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>綠活說這路不情龍童氣；傳聲兩，長能前傷上難。白你更朋方！不認究手件美了電工分間上安天天水安國沒強完我調設。</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                        </div>                   
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="c-theme theme-3">
+                        <h2>我的夢想</h2>
+                        <div class="c-media-wrap">
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>賞花～</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>綠活說這路不情龍童氣；傳聲兩，長能前傷上難。白你更朋方！不認究手件美了電工分間上安天天水安國沒強完我調設。</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="c-theme theme-4">
+                        <h2>三月賞花去</h2>
+                        <div class="c-media-wrap">
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>賞花～</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>綠活說這路不情龍童氣；傳聲兩，長能前傷上難。白你更朋方！不認究手件美了電工分間上安天天水安國沒強完我調設。</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div href="" class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="" class="c-theme theme-5">
+                        <h2>蜷川實花</h2>
+                        <div class="c-media-wrap">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>賞花～</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>綠活說這路不情龍童氣；傳聲兩，長能前傷上難。白你更朋方！不認究手件美了電工分間上安天天水安國沒強完我調設。</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="c-circle">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">Amber</div>
+                                    <p>關低心軍麼我員一，臺人小！</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>                    
+                </div>                                   
+            <div class="c-see-more">
+                <button class="btn btn-default">查看更多精選主題<i class="fa fa-ellipsis-h fa-fw"></i></button>
+            </div>
+        </section>
+        <section>
+            <div class="page-header">
+                <h4>粉絲團分類</h4>
+            </div>
+            <div class="row c-fan-row">
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-1"></i>   
+                            <div class="c-text">地方性商家或地點</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">地方性商家或地點</div>
+                            <select name="" id="" class="form-control">
+                                <option value="">item 1</option>
+                                <option value="">item 2</option>
+                                <option value="">item 3</option>
+                                <option value="">item 4</option>
+                                <option value="">item 5</option>
+                                <option value="">item 6</option>
+                                <option value="">item 7</option>
+                                <option value="">item 8</option>
+                                <option value="">item 9</option>
+                                <option value="">item 10</option>
+                                <option value="">item 11</option>
+                                <option value="">item 12</option>
+                                <option value="">item 13</option>
+                                <option value="">item 14</option>
+                                <option value="">item 15</option>
+                                <option value="">item 16</option>
+                                <option value="">item 17</option>
+                                <option value="">item 18</option>
+                                <option value="">item 19</option>
+                                <option value="">item 20</option>
+                                <option value="">item 21</option>
+                                <option value="">item 22</option>
+                                <option value="">item 23</option>
+                                <option value="">item 24</option>
+                                <option value="">item 25</option>
+                                <option value="">item 26</option>
+                                <option value="">item 27</option>
+                                <option value="">item 28</option>
+                                <option value="">item 29</option>
+                                <option value="">item 30</option>
+                                <option value="">item 31</option>
+                                <option value="">item 32</option>
+                                <option value="">item 33</option>
+                                <option value="">item 34</option>
+                                <option value="">item 35</option>
+                                <option value="">item 36</option>
+                                <option value="">item 37</option>
+                                <option value="">item 38</option>
+                                <option value="">item 39</option>
+                                <option value="">item 40</option>
+                                <option value="">item 41</option>
+                                <option value="">item 42</option>
+                                <option value="">item 43</option>
+                                <option value="">item 44</option>
+                                <option value="">item 45</option>
+                                <option value="">item 46</option>
+                                <option value="">item 47</option>
+                                <option value="">item 48</option>
+                                <option value="">item 49</option>
+                                <option value="">item 50</option>                                
+                            </select>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-2"></i>   
+                            <div class="c-text">公司、組織或機構</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">公司、組織或機構</div>
+                                <select name="" id="" class="form-control">
+                                    <option value="">item 1</option>
+                                    <option value="">item 2</option>
+                                    <option value="">item 3</option>
+                                    <option value="">item 4</option>
+                                    <option value="">item 5</option>
+                                    <option value="">item 6</option>
+                                    <option value="">item 7</option>
+                                    <option value="">item 8</option>
+                                    <option value="">item 9</option>
+                                    <option value="">item 10</option>
+                                    <option value="">item 11</option>
+                                    <option value="">item 12</option>
+                                    <option value="">item 13</option>
+                                    <option value="">item 14</option>
+                                    <option value="">item 15</option>                               
+                                </select>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-3"></i>   
+                            <div class="c-text">品牌或商品</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">品牌或商品</div>
+                                <select name="" id="" class="form-control">
+                                    <option value="">item 1</option>
+                                    <option value="">item 2</option>
+                                    <option value="">item 3</option>
+                                    <option value="">item 4</option>
+                                    <option value="">item 5</option>
+                                    <option value="">item 6</option>
+                                    <option value="">item 7</option>
+                                    <option value="">item 8</option>
+                                    <option value="">item 9</option>
+                                    <option value="">item 10</option>
+                                    <option value="">item 11</option>
+                                    <option value="">item 12</option>
+                                    <option value="">item 13</option>                                
+                                </select>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-4"></i>   
+                            <div class="c-text">表演者、樂團或公眾人物</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">表演者、樂團或公眾人物</div>
+                                <select name="" id="" class="form-control">
+                                    <option value="">item 1</option>
+                                    <option value="">item 2</option>
+                                    <option value="">item 3</option>
+                                    <option value="">item 4</option>
+                                    <option value="">item 5</option>
+                                    <option value="">item 6</option>
+                                    <option value="">item 7</option>
+                                    <option value="">item 8</option>
+                                    <option value="">item 9</option>
+                                    <option value="">item 10</option>                            
+                                </select>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-5"></i>   
+                            <div class="c-text">娛樂</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">娛樂</div>
+                                <select name="" id="" class="form-control">
+                                    <option value="">item 1</option>
+                                    <option value="">item 2</option>
+                                    <option value="">item 3</option>
+                                    <option value="">item 4</option>
+                                    <option value="">item 5</option>
+                                    <option value="">item 6</option>
+                                    <option value="">item 7</option>
+                                    <option value="">item 8</option>
+                                    <option value="">item 9</option>
+                                    <option value="">item 10</option>                        
+                                </select>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12 col-md-4 c-fan-cate">
+                    <div class="c-inner">
+                        <div class="c-cate">
+                            <i class="c-icon c-icon-6"></i>   
+                            <div class="c-text">理念提倡或社群</div>                  
+                        </div>
+                        <div class="c-form">
+                            <div class="c-text">理念提倡或社群</div>
+                                <select name="" id="" class="form-control">
+                                    <option value="">item 1</option>
+                                    <option value="">item 2</option>
+                                    <option value="">item 3</option>
+                                    <option value="">item 4</option>
+                                    <option value="">item 5</option>
+                                    <option value="">item 6</option>
+                                    <option value="">item 7</option>
+                                    <option value="">item 8</option>
+                                    <option value="">item 9</option>
+                                    <option value="">item 10</option>                          
+                                </select>                          
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="page-header">
+                <h4>社群正在熱議</h4>
+            </div>
+            <div class="c-tag-wrap">
+                <a href="" class="btn btn-tag">熱議tag1</a>
+                <a href="" class="btn btn-tag">熱議tag2</a>
+                <a href="" class="btn btn-tag">熱議tag3</a>
+                <a href="" class="btn btn-tag">熱議tag4</a>
+                <a href="" class="btn btn-tag">熱議tag5</a>
+                <a href="" class="btn btn-tag">熱議tag6</a>
+                <a href="" class="btn btn-tag">熱議tag7</a>
+                <a href="" class="btn btn-tag">熱議tag8</a>
+                <a href="" class="btn btn-tag">熱議tag9</a>
+                <a href="" class="btn btn-tag">熱議tag10</a>
+                <a href="" class="btn btn-tag">熱議tag11</a>
+                <a href="" class="btn btn-tag">熱議tag12</a>
+                <a href="" class="btn btn-tag">熱議tag13</a>
+                <a href="" class="btn btn-tag">熱議tag14</a>
+                <a href="" class="btn btn-tag">熱議tag15</a>
+                <a href="" class="btn btn-tag">熱議tag16</a>
+                <a href="" class="btn btn-tag">熱議tag17</a>
+                <a href="" class="btn btn-tag">熱議tag18</a>
+                <a href="" class="btn btn-tag">熱議tag19</a>
+                <a href="" class="btn btn-tag">熱議tag20</a>
+                <a href="" class="btn btn-tag">熱議tag21</a>
+                <a href="" class="btn btn-tag">熱議tag22</a>
+                <a href="" class="btn btn-tag">熱議tag23</a>
+                <a href="" class="btn btn-tag">熱議tag24</a>
+                <a href="" class="btn btn-tag">熱議tag25</a>
+                <a href="" class="btn btn-tag">熱議tag26</a>
+                <a href="" class="btn btn-tag">熱議tag27</a>
+                <a href="" class="btn btn-tag">熱議tag28</a>
+                <a href="" class="btn btn-tag">熱議tag29</a>
+                <a href="" class="btn btn-tag">熱議tag30</a>
+                <a href="" class="btn btn-tag">熱議tag31</a>
+                <a href="" class="btn btn-tag">熱議tag32</a>
+                <a href="" class="btn btn-tag">熱議tag33</a>
+                <a href="" class="btn btn-tag">熱議tag34</a>
+                <a href="" class="btn btn-tag">熱議tag35</a>
+                <a href="" class="btn btn-tag">熱議tag36</a>
+                <a href="" class="btn btn-tag">熱議tag37</a>
+                <a href="" class="btn btn-tag">熱議tag38</a>
+                <a href="" class="btn btn-tag">熱議tag39</a>
+                <a href="" class="btn btn-tag">熱議tag40</a>
+                <a href="" class="btn btn-tag">熱議tag41</a>
+                <a href="" class="btn btn-tag">熱議tag42</a>
+                <a href="" class="btn btn-tag">熱議tag43</a>
+                <a href="" class="btn btn-tag">熱議tag44</a>
+                <a href="" class="btn btn-tag">熱議tag45</a>
+                <a href="" class="btn btn-tag">熱議tag46</a>
+                <a href="" class="btn btn-tag">熱議tag47</a>
+                <a href="" class="btn btn-tag">熱議tag48</a>
+                <a href="" class="btn btn-tag">熱議tag49</a>
+                <a href="" class="btn btn-tag">熱議tag50</a>
+            </div>
+        </section>
+        <section>
+            <div class="page-header">
+                <h4>發掘探索</h4>
+            </div>
+            <div class="row c-explore">
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-line-chart" aria-hidden="true"></i>
+                    <!--<i class="fa fa-sort-amount-asc fa-rotate-180" aria-hidden="true"></i>                            -->
+                    歷史訪客排行
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-cloud" aria-hidden="true"></i>
+                    今日訪客排行
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-fire" aria-hidden="true"></i>
+                    最新備份排行
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <!--<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>-->
+                    FB粉絲團排行
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-map-marker"></i>
+                    熱門地點
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-tags" aria-hidden="true"></i>
+                    熱門標籤
+                </a>
+                <a href="fans100.html" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                    台灣百大粉絲團
+                </a>
+                <a href="#" class="col-sm-4 col-xs-6">
+                    <i class="fa fa-plane" aria-hidden="true"></i>
+                    馬來西亞百大粉絲團
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="page-header">
+                <h4>Ver punzón reputación cercana</h4>
+            </div>
+            <div class="c-map">
+                <p>敬請期待</p>
+            </div>
+        </section>       
+    </div>
+    <footer class="c-footer">
+        <div class="container">
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/help.php">線上求助</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_com.php">企業合作</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_club.php">社團合作</a>｜
+                <a href="http://www.youthwant.com.tw/ads/adsupload.php">刊登廣告</a>｜
+                <a href="http://flog.youthwant.com.tw/setting?tab=privacy">隱私權保護 </a>｜
+                <a href="http://iguang.tw/">愛逛街</a>｜
+                <a href="http://blog.roodo.com/">樂多日誌</a>｜
+                <a href="http://buzzoo.tw/about">朋友圈外 </a>｜
+                <a href="http://www.youthwant.com.tw/">優仕網首頁</a>｜
+                <a href="/new">今日特推</a>｜
+                <a href="/new/historic">歷史訪客排行</a>｜
+                <a href="/new/daily">今日訪客排行</a>｜
+                <a href="/new/fans">FB粉絲團列表</a>
+            </div>            
+            <p>
+                <span>Copyright © <a target="_blank" href="http://www.shinewant.com.tw/" class="color-primary">Shinewant Tech.</a>, 2000-2016. All rights reserved.</span> 
+            </p>    
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/TICRF.php"><span>本網站已依台灣網站內容分級規定處理 ｜ 常年法律顧問: 明沂律師事務所 陳以蓓律師</span></a>
+            </div>  
+        </div>
+    </footer>
+<!--登入燈箱燈箱-->    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-login">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header c-no-heading">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <div class="c-logo">
+                    <img src="http://flog.youthwant.com.tw/images/public/flog_logo.png" alt="">
+                </div>
+                <div class="c-login-fb">
+                    <bttton class="btn btn-block">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <span>使用Facebook帳號登入</span>                        
+                    </bttton>
+                </div> 
+                <div class="c-login-flog">
+                    <p class="text-center">或使用flog帳號登入</p>
+                    <form action="">
+                        <div class="form-group">
+                            <label class="sr-only" for="">flog帳號</label>
+                            <input type="email" class="form-control" id="" placeholder="帳號(facebook登入帳號)">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="">密碼</label>
+                            <input type="password" class="form-control" id="" placeholder="密碼">
+                        </div>
+                    </form>                        
+                    <label for="rule">
+                        <input type="checkbox" id="rule" checked>
+                        <span class="box blue"></span>
+                        <span>我已閱讀<a href="">隱私條款</a></span>
+                    </label>
+                    <button class="btn btn-primary btn-block">登入</button>
+                    <P class="text-center color-gray">
+                        <a href="" class="color-gray">忘記密碼</a>&nbsp;|&nbsp;<a href="" class="color-gray">註冊帳號</a>
+                    </P>
+                </div>
+            </div>      
+        </div>
+    </div>
+</div>
+<!--空的燈箱-->
+<div id="ModalLoading" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-login">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Loading</h4>
+            </div>
+            <div class="modal-body">
+                <div class="c-loading">
+                    <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                </div>             
+            </div>      
+        </div>
+    </div>
+</div>
+<!--多語系切換燈箱-->
+<div id="multiLanguage" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-login">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header c-no-heading">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">切換語系燈箱</h4>
+            </div>
+            <div class="modal-body multi-language">
+                <p>
+                    Tukar ke Bahasa Melayu ?  
+                </p>    
+                <div class="half-btn-wrap">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">tidak</a>    
+                    <a href="#" class="btn btn-primary">benar</a>
+                </div>    
+            </div>      
+        </div>
+    </div>
+</div>
+<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="js/slick.js"></script>
+<script type="text/javascript">
+    $(document).on('ready', function () {
+            $(".regular5").slick({
+                dots: false,
+                infinite: true,
+                // variableWidth: true,
+                slidesToShow: 6,//個數
+                slidesToScroll: 6,//個數
+                autoplay: true,//自動撥放
+                autoplaySpeed: 4000,//自動撥放秒數
+                rows: 1,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {                            
+                            arrows: false,
+                            slidesToShow: 4             
+                        }                    
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {                            
+                            arrows: false,
+                            slidesToShow: 3             
+                        }                    
+                    }
+                ]
+		      }); 
+            });
+        //粉絲團分類
+        $(".c-fan-cate").click(function(){
+            $(this).children(".c-inner").removeClass("slide-down").addClass("slide-up");
+            $(".c-inner").not($(this).children(".c-inner")[0]).removeClass("slide-up").addClass("slide-down");
+        });
+</script>
+</body>
+</html>

@@ -1,0 +1,545 @@
+$brand-primary:         #66c3b6 !default;//主要顏色亮藍#00a0e0 ##66c3b6
+
+$gray-base:              #1d2129 !default;
+$gray-lighter:           lighten($gray-base, 70%) !default;
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+
+$navbar-inverse-bg:                         $brand-primary !default;
+$navbar-inverse-border:                     darken($brand-primary, 10%) !default;
+$navbar-inverse-link-color:                 #fff !default;
+
+$navbar-inverse-link-hover-color:           #fff !default;
+$navbar-inverse-link-hover-bg:              darken($navbar-inverse-bg, 5%) !default;
+
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color !default;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 5%) !default;
+
+$pagination-color:                     $link-color !default;
+$pagination-bg:                        #fff !default;
+$pagination-border:                    #ddd !default;
+$pagination-active-color:              #fff !default;
+$pagination-active-bg:                 $brand-primary !default;
+$pagination-active-border:             $brand-primary !default;
+$pagination-hover-color:               darken($brand-primary, 15%) !default;
+$pagination-hover-bg:                  $gray-lighter !default;
+$pagination-hover-border:              #ddd !default;
+
+//button
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $brand-primary !default;
+$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+//btn-tag
+$btn-tag-color:              #333 !default;
+$btn-tag-bg:                 #fff !default;
+$btn-tag-border:             #ccc !default;
+//screen
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+$grid-float-breakpoint-max: ($screen-md - 1) !default;
+
+@mixin button-variant($color, $background, $border) {
+  color: $color;
+  background-color: $background;
+  border-color: $border;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: darken($background, 10%);
+    border-color: darken($border, 12%);        
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $background;
+          border-color: $border;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
+.btn-primary {  
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
+.btn-tag{
+  @include button-variant($btn-tag-color, $btn-tag-bg, $btn-tag-border);
+}
+/*.loading-block{
+	color: $brand-primary;
+}*/
+//slick
+/* Arrows */
+.slick-prev,
+.slick-next {
+    &:before {
+        color: $brand-primary;
+    }
+}
+/* Dots*/
+.slick-dots {
+    li {
+        button {
+            &:before {
+                color: $brand-primary;
+            }
+        }
+        &.slick-active button:before {
+            color: $brand-primary;
+        }
+    }
+}
+//a
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+//btn-link
+.btn-link {
+  color: $link-color;
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+}
+label{	//checkbox and radio change image
+	.c-open{
+		display: none;
+		color: $brand-primary;
+	}
+	input[type="radio"],input[type="checkbox"]{
+		&:checked + .box{
+			background-color: $brand-primary;
+			border-color: $brand-primary;
+		}
+	}
+}
+//navbar
+.navbar-inverse {
+  background-color: $navbar-inverse-bg;
+  border-color: $navbar-inverse-border;
+  .navbar-nav {
+    > li > a {
+      color: $navbar-inverse-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-inverse-link-hover-color;
+        background-color: $navbar-inverse-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-inverse-link-active-color;
+        background-color: $navbar-inverse-link-active-bg;
+      }
+    }
+  }
+.navbar-collapse,
+.navbar-form {
+  // border-color: darken($navbar-inverse-bg, 7%);
+  border-color: darken($navbar-inverse-bg, 10%);
+}
+// Dropdowns
+.navbar-nav {
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-inverse-link-active-bg;
+        color: $navbar-inverse-link-active-color;
+      }
+    }
+    @media (max-width: $grid-float-breakpoint-max){
+        .open .dropdown-menu {
+        > .dropdown-header {
+            border-color: $navbar-inverse-border;
+        }
+        .divider {
+            background-color: $navbar-inverse-border;
+        }
+        > li > a {
+            color: $navbar-inverse-link-color;
+            &:hover,
+            &:focus {
+            color: $navbar-inverse-link-hover-color;
+            background-color: $navbar-inverse-link-hover-bg;
+            }
+        }
+        > .active > a {
+            &,
+            &:hover,
+            &:focus {
+            color: $navbar-inverse-link-active-color;
+            background-color: $navbar-inverse-link-active-bg;
+            }
+        }
+      }
+    }    
+  }
+}
+//pagation
+.pagination {
+    > li {
+    > a,
+    > span {
+      color: $pagination-color;
+      background-color: $pagination-bg;
+      border: 1px solid $pagination-border;
+    }
+  }  
+  > li > a,
+  > li > span {
+    &:hover,
+    &:focus {
+      color: $pagination-hover-color;
+      background-color: $pagination-hover-bg;
+      border-color: $pagination-hover-border;
+    }
+  }  
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      color: $pagination-active-color;
+      background-color: $pagination-active-bg;
+      border-color: $pagination-active-border;
+      cursor: default;
+    }
+  }
+}
+//page-header
+.page-header {
+  border-color: $brand-primary;
+  h4{
+    border-color: $brand-primary;
+    color: #fff;
+    background-color: $brand-primary;
+  }
+}
+//custom
+.color-primary{
+	color: $brand-primary!important;
+}
+.c-social{
+	>a{
+		&.thumbs{
+			.badge{
+				background-color: $brand-primary;
+			}
+			i{
+				color: $brand-primary;
+			}
+		}
+    &.btn-link{//收藏
+      &:hover{
+        @media (min-width: $screen-desktop){
+          color: darken($brand-primary, 10%);
+        }
+      }
+      &.active{
+        color: darken($brand-primary, 10%);
+      }
+		}
+	}
+}
+//time
+.c-post{
+	.c-title{
+		.c-info{
+			.time{
+				color: $brand-primary;
+			}	
+		}
+	}
+}
+//content color
+.c-content{
+	>a{	
+        color: $gray-base;	
+		&:hover{
+			text-decoration: none;
+			.color-primary{
+				color: darken($brand-primary, 15%)!important;
+			}
+		}
+	}
+}
+//right side
+.c-post-side{
+	h3,h5{
+		color: $brand-primary;
+	}
+}
+ul.c-about-me{
+	li{
+		&:before{
+			color: $brand-primary;
+		}
+	}
+}
+//main theme
+.c-theme{
+  .c-media-wrap{//精選主題 content
+  .media-left{
+    border-left: 3px solid $brand-primary;
+  }
+  .media-body{
+    .media-heading{//精選主題 user name
+      color: $brand-primary;
+    }
+  }
+  }
+}
+//explore
+.c-explore{
+	a{
+		&:hover{
+			color: $brand-primary;
+		}
+	}
+}
+.c-backup-obj{//備份對象
+	ul{
+		li{
+			a{
+				&:hover{
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+}
+//主題頁
+.c-theme-page{	
+	h1{
+		color: $brand-primary;
+	}
+}
+//留言
+.c-message{
+	.media{
+		.c-msg-social{
+			a{
+				&.thumbs{//按讚數	
+					.badge{
+						background-color: $brand-primary;
+					}
+					i{
+						color: $brand-primary;
+					}
+				}				
+			}
+		}
+	}
+}
+//個人頁
+.c-personal-page{
+	h1{
+		background-color: $brand-primary;
+		@media (min-width: ( $screen-phone + 1)){
+			&:after{
+				border-top: 10px solid $brand-primary;
+			}
+		}
+	}
+}
+//日曆
+.datepicker table tr td {
+  &.post{
+      color: $brand-primary!important;
+  }
+}
+
+.datepicker table tr td.active {
+  background-color: $brand-primary;
+  &.highlighted {
+    background-color: $brand-primary;
+  }
+  &:focus, &.highlighted:focus, &.focus, &.highlighted.focus {
+    background-color: $brand-primary;
+  }
+  &:hover, &.highlighted:hover, &:active, &.highlighted:active, &.active, &.highlighted.active {
+    background-color: $brand-primary;
+  }
+  &.disabled:hover, &.highlighted.disabled:hover, &[disabled]:hover, &.highlighted[disabled]:hover {
+    background-color: $brand-primary;
+  }
+}
+
+fieldset[disabled] .datepicker table tr td.active {
+  &:hover, &.highlighted:hover {
+    background-color: $brand-primary;
+  }
+}
+
+.datepicker table tr td.active {
+  &.disabled:focus, &.highlighted.disabled:focus, &[disabled]:focus, &.highlighted[disabled]:focus {
+    background-color: $brand-primary;
+  }
+}
+
+fieldset[disabled] .datepicker table tr td.active {
+  &:focus, &.highlighted:focus {
+    background-color: $brand-primary;
+  }
+}
+
+.datepicker table tr td.active {
+  &.disabled.focus, &.highlighted.disabled.focus, &[disabled].focus, &.highlighted[disabled].focus {
+    background-color: $brand-primary;
+  }
+}
+
+fieldset[disabled] .datepicker table tr td.active {
+  &.focus, &.highlighted.focus {
+    background-color: $brand-primary;
+  }
+}
+
+.datepicker table tr td span {
+
+  &.active {
+    background-color: $brand-primary;
+    &:hover {
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      background-color: $brand-primary;
+      &:hover {
+        background-color: $brand-primary;
+      }
+    }
+    &:focus, &:hover:focus {
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      &:focus, &:hover:focus {
+        background-color: $brand-primary;
+      }
+    }
+    &.focus, &:hover.focus {
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      &.focus, &:hover.focus {
+        background-color: $brand-primary;
+      }
+    }
+    &:hover, &.disabled:hover, &:active, &:hover:active {
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      &:active, &:hover:active {
+        background-color: $brand-primary;
+      }
+    }
+    &.active, &:hover.active {
+      background-color: $brand-primary;
+    }
+    &.disabled {
+      &.active, &:hover.active {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+
+fieldset[disabled] .datepicker table tr td span.active {
+  &:hover, &.disabled:hover {
+    background-color: $brand-primary;
+  }
+}
+
+.datepicker table tr td span.active {
+  &.disabled:focus, &:hover.disabled:focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &.disabled:focus, &:hover.disabled:focus {
+      background-color: $brand-primary;
+    }
+  }
+  &[disabled]:focus, &:hover[disabled]:focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &[disabled]:focus, &:hover[disabled]:focus {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+fieldset[disabled] .datepicker table tr td span.active {
+  &:focus, &:hover:focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &:focus, &:hover:focus {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+.datepicker table tr td span.active {
+  &.disabled.focus, &:hover.disabled.focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &.disabled.focus, &:hover.disabled.focus {
+      background-color: $brand-primary;
+    }
+  }
+  &[disabled].focus, &:hover[disabled].focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &[disabled].focus, &:hover[disabled].focus {
+      background-color: $brand-primary;
+    }
+  }
+}
+
+fieldset[disabled] .datepicker table tr td span.active {
+  &.focus, &:hover.focus {
+    background-color: $brand-primary;
+  }
+  &.disabled {
+    &.focus, &:hover.focus {
+      background-color: $brand-primary;
+    }
+  }
+}

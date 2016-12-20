@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://flog.youthwant.com.tw/favicon.ico" type="image/ico">
+    <title>設定</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">    
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/skin.css">
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand c-navbar-brand" href="#">
+                    <img src="./images/public/logo-font-color.png" width="100" height="50">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">最新</a></li>
+                </ul>      
+                <!--會員姓名-->
+                <ul class="nav navbar-nav navbar-right c-couple-line">
+                    <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
+                                Hi,Amber
+                                <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-download"></i>立即備份</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
+                            <li class="divider"></li>
+                            <li><a href=""><i class="fa fa-fw fa-power-off"></i>登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--搜尋-->
+                <form action="" class="navbar-form c-navbar-form">
+                    <div class="input-group">
+                        <input type="text" name="" class="border-white form-control">
+                        <span class="input-group-btn">
+                            <div class="btn-group dropdown">
+                                <button class="btn btn-default border-white dropdown-toggle" data-toggle="dropdown" id="dropmenu-tool" aria-expanded="false">
+                                    搜尋此人
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                                    <li><a href="">搜尋此人</a></li>
+                                    <li><a href="">搜尋全部</a></li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn btn-primary border-white">
+                                <i class="fa fa-search"></i>
+                                搜尋
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
+    <div class="container">
+        <!--麵包屑-->                 
+        <ol class="breadcrumb">
+            <li><a href="">Flog首頁</a></li>
+            <li><a href="">Amber這人主頁</a></li>
+            <li><a href="">Amber個人頁設定</a></li>
+            <li class="active">隱私設定</li>                        
+        </ol> 
+        <div class="c-set-btn clearfix">
+            <a href="#" class="btn btn-lg btn-all active"><i class="fa fa-cog"></i>設定</a>            
+            <a href="#" class="btn btn-lg btn-post"><i class="fa fa-eye-slash"></i>隱私設定</a>                 
+            <a href="#" class="btn btn-lg btn-check"><i class="fa fa-globe" aria-hidden="true"></i></i>語言切換</a>        
+            <a href="#" class="btn btn-lg btn-film pull-right"><i class="fa fa-download" aria-hidden="true"></i>立即備份</a>
+        </div>
+        <section> 
+            <div class="c-big-post brand-all">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon">
+                        <i class="fa fa-cog fa-2x"></i>                        
+                    </div>                 
+                    <h2>設定</h2>                 
+                </div>
+                <div class="c-content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            選擇版型
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-4 c-temp">
+                                    <div class="c-image">
+                                        <img src="http://flog.youthwant.com.tw/themes/website/images/theme_website.jpg" alt="">
+                                    </div>
+                                    <div class="c-check">
+                                        <label for="temp-1">                                            
+                                            <input type="radio" name="temp" id="temp-1" checked>
+                                            <span class="box"></span>
+                                            <span class="title">清新風</span>
+                                        </label>                                                                                
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 c-temp">
+                                    <div class="c-image">
+                                        尚未開放
+                                    </div>
+                                    <div class="c-check">
+                                        <label for="temp-2">                                           
+                                            <input type="radio" name="temp" id="temp-2">
+                                            <span class="box"></span>
+                                            <span class="title">普普風</span>
+                                        </label>                                                                                
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 c-temp">
+                                    <div class="c-image">
+                                        尚未開放
+                                    </div>
+                                    <div class="c-check">
+                                        <label for="temp-2" class="disabled">                                           
+                                            <input type="radio" name="temp" id="temp-2" disabled>
+                                            <span class="box"></span>
+                                            <span class="title">馬卡龍</span>
+                                        </label>                                                                                
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-4 c-temp">
+                                    <div class="c-image">
+                                        尚未開放
+                                    </div>
+                                    <div class="c-check">
+                                        <label for="temp-2" class="disabled">                                           
+                                            <input type="radio" name="temp" id="temp-2" disabled>
+                                            <span class="box"></span>
+                                            <span class="title">個性黑</span>
+                                        </label>                                                                                
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            自訂的背景顏色
+                        </div>
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-sm-6 text-center">
+                                    <img src="./images/color.jpg" alt="工程師放code區">                  
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="alert alert-info">
+                                        <i class="fa fa-info-circle"></i>
+                                        <strong>變更樣式後沒有生效?</strong>                                       
+                                    </div>
+                                    <ul class="c-about-me">
+                                        <li>更新瀏覽器暫存檔</li>
+                                        <li>Windows os 請按 Ctrl + F5</li>
+                                        <li>MAC osx 請按 Shift + Command + R</li>
+                                    </ul>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div> 
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg">儲存</button>
+                    </div>          
+                </div>                               
+            </div>                    
+        </section>
+        <!--隱私設定-->
+        <section> 
+            <div class="c-big-post brand-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon">
+                        <i class="fa fa-eye-slash fa-2x" aria-hidden="true"></i>
+                    </div>                 
+                    <h2>隱私設定</h2>                 
+                </div>
+                <div class="c-content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            服務說明
+                        </div>
+                        <div class="panel-body">
+                            <div class="c-privacy-text">
+                                優仕網flog服務如何蒐集您的個人資料?<br> 當您使用Facebook登入優仕網或使用flog備份服務時，我們會透過Facebook授權視窗經過您同意授權後，取得您的個人資訊，包括姓名、電子信箱、生日、性別、朋友名單、居住地、感情狀態等等；當您在備份設定頁面選擇備份區間後，我們會取用您於該區間在Facebook所發佈的內容，包括貼文、相片、相簿、影片、網誌、打卡資訊、轉貼連結等等。
+                                <br>
+                                <br> 優仕網flog服務如何使用您的個人資料?
+                                <br> 優仕網flog服務為您備份您在facebook的所有活動紀錄(facebook log)，並依照您每個單一活動在facebook的隱私設定，同樣以公開、朋友、私密... 等方式重新呈現於flog，並對前述資料進行匯整與編輯。<br>
+                                <br> 可能產生的資料呈現問題
+                                <br> 由於備份內容是透過facebook提供之API接口取得，可能會出現資料不全、圖片空白或模糊，以及相簿被切割成多張相片等問題，皆為facebook資料輸出之限制。
+                                <br>
+                                <br> 其他未盡事項悉以
+                                <a href="http://reg.youthwant.com.tw/service/reg/service_rule.htm" target="_blank">優仕網會員服務條款</a>與<a href="http://www.youthwant.com.tw/privacy.php"
+                                    target="_blank">隱私權保護政策</a> 為依歸。<br>
+                            </div>
+                        </div>
+                    </div>              
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            關於我資料開放 / 隱藏
+                        </div>
+                        <div class="panel-body">
+                            <table class="table c-my-info">
+                                <tr>
+                                    <th>公司</th>
+                                    <td>在嚮網科技-台北工作</td>
+                                    <td>
+                                        <label for="temp-10">                                            
+                                            <input type="checkbox" id="temp-10" checked>
+                                            <span class="box"></span>
+                                            <span class="c-close">隱藏</span>
+                                            <span class="c-open">已開放</span>
+                                        </label>                                          
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>性別</th>
+                                    <td>female</td>
+                                    <td>
+                                        <label for="temp-20">                                            
+                                            <input type="checkbox" id="temp-20" checked>
+                                            <span class="box"></span>
+                                            <span class="c-close">隱藏</span>
+                                            <span class="c-open">已開放</span>
+                                        </label>                                          
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>現居城市</th>
+                                    <td>現居城市 Keelung, Taiwan</td>
+                                    <td>
+                                        <label for="temp-30">                                            
+                                            <input type="checkbox" id="temp-30">
+                                            <span class="box"></span>
+                                            <span class="c-close">隱藏</span>
+                                            <span class="c-open">已開放</span>
+                                        </label>                                          
+                                    </td>
+                                </tr>
+                            </table>
+                            <button class="btn btn-default">
+                                <i class="fa fa-trash-o"></i>
+                                刪除備份資料
+                            </button>
+                        </div>
+                    </div> 
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg">儲存</button>
+                    </div>          
+                </div>                               
+            </div>                    
+        </section>
+        <!--語言切換-->
+        <section> 
+            <div class="c-big-post brand-check">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon">
+                        <i class="fa fa-globe fa-2x" aria-hidden="true"></i>
+                    </div>                 
+                    <h2>語言切換</h2>                 
+                </div>
+                <div class="c-content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            選擇語言版本
+                        </div>
+                        <div class="panel-body">
+                            <div class="form-group">
+                                <label for="" class="col-sm-4 control-label">主要語言</label>
+                                <div class="col-sm-6 mg-none">
+                                    <select id="la" class="form-control">
+                                        <option selected="selected" value="TW">中文(台灣)</option>
+                                        <option value="EN">English(US)</option>
+                                        <option value="VN">Tiếng Việt</option>
+                                        <option value="MY">Bahasa Melayu</option>
+                                        <option value="TN">ภาษาไทย</option>
+                                        <option value="ES">Español</option>
+                                    </select>    
+                                </div>
+                            </div>            
+                        </div>
+                    </div>                            
+                    <div class="text-center">
+                        <button class="btn btn-primary btn-lg">儲存</button>
+                    </div>          
+                </div>                               
+            </div>                    
+        </section>
+        <section> 
+            <div class="c-big-post brand-film">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon">
+                        <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                    </div>                 
+                    <h2>指定備份對象與區間</h2>                 
+                </div>
+                <div class="c-content">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            1.選擇備份本人或粉絲團資料
+                        </div>
+                        <div class="panel-body c-backup-obj">  
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <img src="http://graph.facebook.com/1152646664752210/picture">
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="media-heading">
+                                                    Amber
+                                                </div>
+                                                <span>備份自己</span>
+                                            </div>
+                                        </div>
+                                        <span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="media-heading">
+                                                            Amber
+                                                        </div>
+                                                        <span>備份自己</span>
+                                                    </div>
+                                                </div>                                                
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <div class="media-heading">
+                                                            Amber
+                                                        </div>
+                                                        <span>備份自己</span>
+                                                    </div>
+                                                </div>                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>                                                   
+                        </div>
+                    </div>        
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            2.選擇備份區間
+                        </div>            
+                        <div class="panel-body text-center">  
+                            <div class="c-backup-time">
+                                <label for="option-1">
+                                    <input type="radio" name="option" id="option-1" checked>
+                                    <span class="box"></span>
+                                    <span class="c-title"><i class="fa fa-archive"></i>備份所有時間</span>
+                                     <div class="c-text">
+                                        備份您註冊Facebook以來的所有貼文，帳號中已備份的內容將會被覆蓋為最新資料。
+                                    </div>
+                                </label>                                                        
+                            </div>   
+                            <div class="c-backup-time">
+                                <label for="option-2">
+                                    <input type="radio" name="option" id="option-2">
+                                    <span class="box"></span>
+                                    <span class="c-title"><i class="fa fa-calendar-o"></i>選擇日期區間</span>
+                                    <div class="c-text">
+                                        <p>
+                                            您可選擇指定期間內的貼文做備份，上次完成備份的日期會預設為開始日期，您可再自行修改。
+                                        </p>
+                                        <div class="row dpRange" id="datepicker">        
+                                            <div class="col-sm-1"></div>                
+                                            <div class="col-sm-5">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar-o"></i></span>
+                                                    <input type="text" class="form-control" placeholder="開始日期" name="start" />
+                                                </div>  
+                                            </div>                                        
+                                            <div class="col-sm-5">
+                                                <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-calendar-o"></i></span>
+                                                    <input type="text" class="form-control" placeholder="結束日期" name="end" />
+                                                </div>      
+                                            </div>       
+                                            <div class="col-sm-1"></div>                      
+                                        </div> 
+                                    </div>
+                                </label>                                                      
+                            </div>  
+                            <p class="c-lg-circle-btn">
+                                <a href="" class="btn btn-lg btn-film">
+                                    <i class="fa fa-download fa-4x"></i>
+                                    <br>
+                                    開始備份！Go
+                                </a>
+                            </p>        
+                            <div>
+                                <label for="agree">
+                                    <input type="checkbox"  id="agree">
+                                    <span class="box"></span>
+                                    <span>我同意每24小時由系統為我自動備份</span>
+                                </label>                                     
+                            </div>                                                                                                   
+                        </div>
+                    </div>                                          
+                </div>                               
+            </div>                    
+        </section>
+    </div>    
+    <footer class="c-footer">
+        <div class="container">
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/help.php">線上求助</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_com.php">企業合作</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_club.php">社團合作</a>｜
+                <a href="http://www.youthwant.com.tw/ads/adsupload.php">刊登廣告</a>｜
+                <a href="http://flog.youthwant.com.tw/setting?tab=privacy">隱私權保護 </a>｜
+                <a href="http://iguang.tw/">愛逛街</a>｜
+                <a href="http://blog.roodo.com/">樂多日誌</a>｜
+                <a href="http://buzzoo.tw/about">朋友圈外 </a>｜
+                <a href="http://www.youthwant.com.tw/">優仕網首頁</a>｜
+                <a href="/new">今日特推</a>｜
+                <a href="/new/historic">歷史訪客排行</a>｜
+                <a href="/new/daily">今日訪客排行</a>｜
+                <a href="/new/fans">FB粉絲團列表</a>
+            </div>            
+            <p>
+                <span>Copyright © <a target="_blank" href="http://www.shinewant.com.tw/" class="color-primary">Shinewant Tech.</a>, 2000-2016. All rights reserved.</span> 
+            </p>    
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/TICRF.php"><span>本網站已依台灣網站內容分級規定處理 ｜ 常年法律顧問: 明沂律師事務所 陳以蓓律師</span></a>
+            </div>  
+        </div>
+    </footer>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/datepicker/bootstrap-datepicker.js"></script>
+    <script src="js/datepicker/bootstrap-datepicker.TW.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+        $('.dpRange input').datepicker({
+            startDate: "02/04/2004",
+            endDate: "today",
+            language: "zh-TW",
+            todayBtn: true,
+            maxViewMode: 2,
+            todayHighlight: true,
+            autoclose: true,
+            orientation: "bottom left"
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="http://flog.youthwant.com.tw/favicon.ico" type="image/ico">
+    <title>主題頁+貼文列表</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-datepicker3.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">        
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/skin.css">-->
+</head>
+<body>
+    <nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand c-navbar-brand" href="#">
+                    <img src="./images/public/logo-font-color.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">最新</a></li>
+                </ul>      
+                <!--會員姓名-->
+                <ul class="nav navbar-nav navbar-right c-couple-line">
+                    <li class="dropdown" id="headDrop">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
+                                Hi,Amber
+                                <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu header-dropdown-menu">
+                            <li><a href=""><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-download"></i>立即備份</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
+                            <li class="divider"></li>
+                            <li><a href=""><i class="fa fa-fw fa-power-off"></i>登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--搜尋-->
+                <form action="" class="navbar-form c-navbar-form">
+                    <div class="input-group">
+                        <input type="text" name="" class="border-white form-control">
+                        <span class="input-group-btn">
+                            <div class="btn-group dropdown">
+                                <button class="btn btn-default border-white dropdown-toggle" data-toggle="dropdown" id="dropmenu-tool" aria-expanded="false">
+                                    搜尋此人
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-up" aria-labelledby="dropmenu-tool">
+                                    <li><a href="">搜尋此人</a></li>
+                                    <li><a href="">搜尋全部</a></li>
+                                </ul>
+                            </div>                  
+                            <button type="submit" class="btn btn-primary border-white">
+                                <i class="fa fa-search"></i>
+                                搜尋
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
+    <div class="container">
+			<div class="jumbotron c-theme-page">			
+                <h1>馬拉松</h1>
+                <p>共有<span>10587</span>則貼文</p>
+                <div class="c-tag-wrap c-tag-two-row">
+                    <a href="" class="btn btn-tag">台北馬拉松</a>
+                    <a href="" class="btn btn-tag">宜蘭國道馬拉松</a>
+                    <a href="" class="btn btn-tag">舒跑杯</a>
+                    <a href="" class="btn btn-tag">太空慢跑</a>
+                    <a href="" class="btn btn-tag">環台馬拉松</a>
+                    <a href="" class="btn btn-tag">永慶杯路跑賽</a>
+                    <a href="" class="btn btn-tag">新光公益路跑</a>
+                </div>	
+                <div class="c-web-btn-wrap">
+                    <a href="#" class="btn btn-lg btn-all"><i class="fa fa-files-o"></i>所有內容</a>
+                    <a href="#" class="btn btn-lg btn-post"><i class="fa fa-align-left"></i>貼文</a>
+                    <a href="#" class="btn btn-lg btn-image"><i class="fa fa-camera"></i>照片</a>
+                    <a href="#" class="btn btn-lg btn-blog"><i class="fa fa-file-text-o"></i>網誌</a>
+                    <a href="#" class="btn btn-lg btn-film"><i class="fa fa-film"></i>影片</a>
+                    <a href="#" class="btn btn-lg btn-check"><i class="fa fa-map-marker"></i>打卡</a>
+                    <a href="#" class="btn btn-lg btn-connect active"><i class="fa fa-link"></i>連結</a>
+                </div>		
+			</div>
+            <section>          
+                <div class="c-slide-wrap">
+                    <div class="variable slider">         
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a>         
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a> 
+                        <a href="">
+                            <div><img src="http://ste.india.com/sites/default/files/2015/12/18/442851-max.jpg" alt="馬拉松" title="馬拉松"></div>
+                        </a>               
+                    </div>
+                </div>                
+            </section>
+            <div class="row">
+                <div class="col-md-8">
+                    <!---m板分類篩選-->                                            
+                    <div class="dropdown c-m-btn-wrap">
+                        <button class="btn btn-tag btn-block dropdown-toggle" data-toggle="dropdown">分類篩選<span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href=""><i class="fa fa-files-o"></i>所有內容</a></li>
+                            <li><a href=""><i class="fa fa-align-left"></i>貼文</a></li>
+                            <li><a href=""><i class="fa fa-camera"></i>照片</a></li>
+                            <li><a href=""><i class="fa fa-file-text-o"></i>網誌</a></li>
+                            <li><a href=""><i class="fa fa-film"></i>影片</a></li>
+                            <li><a href=""><i class="fa fa-map-marker"></i></i>打卡</a></li>
+                            <li><a href=""><i class="fa fa-link"></i></i>連結</a></li>
+                        </ul>
+                    </div> 
+                    <!--麵包屑-->
+                    <ol class="breadcrumb">
+                        <li><a href="">Flog首頁</a></li>
+                        <li><a href="">主題[馬拉松]</a></li>
+                        <li class="active">貼文</li>                        
+                    </ol>    
+                    <!--查尋不到資料-->       
+                    <div class="c-post">
+                        <div class="import-all">
+                            <div class="system-text">
+                                <div class="tt">
+                                    dogin flog search results:                                
+                                </div>
+                                <p>
+                                    dog did not mathch any documents. Suggested links of dog:
+                                </p>
+                            </div>
+                            <ul class="import-list">
+                                <li>                                    
+                                    <h3 class="tt">
+                                        <a href="">It rains cats and dogs的由來-詹麗馨的教學天地-樂多日誌</a>
+                                    </h3>
+                                    <a href="" class="image">
+                                        <img src="http://megazonehitradio.com/wp-content/uploads/2016/05/marathon-runners.jpg" alt="">
+                                    </a>
+                                    <div class="url">
+                                        http://reader.roodo.com/sabinasun/archives/1839602.html
+                                    </div>
+                                    <p>
+                                        It rains cats and dogs的由來.It rains cats and dog:怎麼天空會下起貓和狗呢?根據英與慣用語的故事...
+                                    </p>
+                                </li>
+                                <li>
+                                    
+                                    <h3 class="tt">
+                                        <a href="">It rains cats and dogs的由來-詹麗馨的教學天地-樂多日誌</a>
+                                    </h3>
+                                    <a href="" class="image"></a>
+                                    <div class="url">
+                                        http://reader.roodo.com/sabinasun/archives/1839602.html
+                                    </div>
+                                    <p>
+                                        It rains cats and dogs的由來.It rains cats and dog:怎麼天空會下起貓和狗呢?根據英與慣用語的故事...
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 class="tt">
+                                        <a href="">It rains cats and dogs的由來-詹麗馨的教學天地-樂多日誌</a>
+                                    </h3>
+                                    <a href="" class="image">
+                                        <img src="http://megazonehitradio.com/wp-content/uploads/2016/05/marathon-runners.jpg" alt="">
+                                    </a>
+                                    <div class="url">
+                                        http://reader.roodo.com/sabinasun/archives/1839602.html
+                                    </div>
+                                    <p>
+                                        It rains cats and dogs的由來.It rains cats and dog:怎麼天空會下起貓和狗呢?根據英與慣用語的故事...
+                                    </p>
+                                </li>
+                                <li>
+                                    <h3 class="tt">
+                                        <a href="">It rains cats and dogs的由來-詹麗馨的教學天地-樂多日誌</a>
+                                    </h3>
+                                    <div class="url">
+                                        http://reader.roodo.com/sabinasun/archives/1839602.html
+                                    </div>
+                                    <p>
+                                        It rains cats and dogs的由來.It rains cats and dog:怎麼天空會下起貓和狗呢?根據英與慣用語的故事...
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>                                                                    
+                    <!--post-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-post">
+                                <i class="fa fa-align-left fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <!--<span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>-->
+                                <!--<span class="icon"><i data-toggle="tooltip" data-placement="right" title="公開" class="fa fa-globe"></i></span>-->
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="只限本人" class="fa fa-lock"></i></span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="只限台北市" class="fa fa-map-marker"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="page.html">
+                                <span>貼文版型：純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字</span>
+                                <span class="color-primary">看更多...</span>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs" data-toggle="modal" data-target="#myModal">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">覺得這個很讚的人</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--image-->
+                     <!--image type1-1: one big imgage-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-image">
+                                <i class="fa fa-camera fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">照片版型1-1：一張照片隨便大小</h4>
+                                    <p>                                     
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>       
+                                <div class="c-image-wrap">
+                                    <div class="c-image">
+                                        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-0/s526x395/14237629_1314883138552434_1106959926119340348_n.jpg?oh=ec8d229a8c81ac11676950c4c2e516a6&oe=584290C5" alt="">
+                                    </div>                                                                                              
+                                </div>                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--image type1-2: two big imgage-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-image">
+                                <i class="fa fa-camera fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">照片版型1-2 : 兩張橫向照片</h4>
+                                    <p>                                     
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>       
+                                <div class="c-image-wrap">
+                                    <div class="c-image">
+                                        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13925365_1186731564691277_833360004327333606_n.jpg?oh=6c37c99e7014f79ca48773c0c6a69bfc&oe=587AC813" alt="">
+                                    </div>                                   
+                                    <div class="c-image">
+                                        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13925365_1186731564691277_833360004327333606_n.jpg?oh=6c37c99e7014f79ca48773c0c6a69bfc&oe=587AC813" alt="">
+                                    </div>                                   
+                                </div>                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--image type2: two images-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-image">
+                                <i class="fa fa-camera fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">照片版型2：兩張照片，最好是直的or正方形</h4>
+                                    <p>                                      
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>  
+                                <div class="c-image-wrap">
+                                    <div class="c-image c-image-2">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>  
+                                     <div class="c-image c-image-2">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>                                      
+                                </div>                                                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>  
+                    <!--image type3: three images-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-image">
+                                <i class="fa fa-camera fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">照片版型3：三張照片，第一張最好放橫的or正方形的</h4>
+                                    <p>                                          
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>  
+                                <div class="c-image-wrap">
+                                    <div class="c-image c-image-3">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>  
+                                     <div class="c-image c-image-3">
+                                        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13925365_1186731564691277_833360004327333606_n.jpg?oh=6c37c99e7014f79ca48773c0c6a69bfc&oe=587AC813" alt="">
+                                    </div> 
+                                    <div class="c-image c-image-3">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>                                        
+                                </div>                                                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--image type4: over four images-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-image">
+                                <i class="fa fa-camera fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">照片版型4：四張照片以上</h4>
+                                    <p>         
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>  
+                                <div class="c-image-wrap">
+                                    <div class="c-image c-image-4">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>  
+                                     <div class="c-image c-image-4">
+                                        <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13925365_1186731564691277_833360004327333606_n.jpg?oh=6c37c99e7014f79ca48773c0c6a69bfc&oe=587AC813" alt="">
+                                    </div> 
+                                    <div class="c-image c-image-4">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>        
+                                    <div class="c-image c-image-4">
+                                        <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>                                  
+                                </div>                                                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>                     
+                    <!--blog-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-blog">
+                                <i class="fa fa-file-text-o fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">
+                                <span>部落格版型：純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字純貼文純文字</span>
+                                <span class="color-primary">看更多...</span>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--film youtube-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-film">
+                                <i class="fa fa-film fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">影片版型</h4>
+                                    <p>                                                 
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>       
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0iZp88mumjo" frameborder="0" allowfullscreen></iframe>
+                                </div>   
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>     
+                    <!--film 其他播放器--> 
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-film">
+                                <i class="fa fa-film fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">
+                                <p>版主的murmur...</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <div class="other-film-image">
+                                            <img src="https://fsp.youthwant.com/images/232633627068_10155174211012069.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="color-primary">40年笑容難忘　日大叔和女神重逢</h4>
+                                        <span>全新的壹週刊官方網站，提供最即時的各類時事及娛樂新聞，精采的影音壹動新聞及部份雜誌內容免費網上看，並提供爆料投訴管道及雜誌訂閱、行動連結專區，天天上網看新聞，聊八卦，壹週刊，不只是週刊。</span>                                                                                                                                           
+                                        <span class="color-primary">看更多...</span>                           
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>     
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-film">
+                                <i class="fa fa-film fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">
+                                <p>版主的murmur...</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <div class="other-film-image">
+                                            <img src="https://fsp.youthwant.com/images/232633627068_10155174211012069.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="color-primary">40年笑容難忘　日大叔和女神重逢</h4>
+                                        <span>全新的壹週刊官方網站，提供最即時的各類時事及娛樂新聞，精采的影音壹動新聞及部份雜誌內容免費網上看，並提供爆料投訴管道及雜誌訂閱、行動連結專區，天天上網看新聞，聊八卦，壹週刊，不只是週刊。</span>                                                                                                                                           
+                                        <span class="color-primary">看更多...</span>                           
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>           
+                    <!--check-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-check">
+                                <i class="fa fa-map-marker fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/189282637800283/picture?type=large" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <p>                                            
+                                            <span>吃吃吃</span>
+                                            <span class="color-gray">—饒河街觀光夜巿 Raohe Street Night Market</span>
+                                            <span class="color-primary">看更多...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--connect-->
+                    <!--connect type1: small img-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-connect">
+                                <i class="fa fa-link fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">
+                                <p>版主的murmur...</p>
+                                <div class="media">
+                                    <div class="media-left">
+                                        <img src="http://fsp.youthwant.com/images/1152646664752210_1434057336611140.jpg" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h4 class="color-primary">連結版型1：小張圖片</h4>
+                                        <p>
+                                            <small>gomaji.com</small>
+                                            <br/>
+                                            <br/>
+                                            <span>只要429元起，即可享有【藍象廷泰鍋】藍象廷泰式火鍋晚餐、假日吃到飽 A.單人/B.雙人/C.四人/D.十人〈鍋底(青咖</span>
+                                            <span class="color-primary">看更多...</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--connect type2: big img-->
+                    <div class="c-post">
+                        <div class="c-title">
+                            <div class="c-cate-icon brand-connect">
+                                <i class="fa fa-link fa-2x"></i>
+                            </div>
+                            <div class="c-avatar">
+                                <img src="http://www.japantimes.co.jp/wp-content/uploads/2015/02/p14-marathon-a-20150223.jpg" alt="馬拉松" title="馬拉松">
+                            </div>
+                            <div class="c-info">
+                                <a href="" class="name">陳保如</a>
+                                <br>
+                                <span class="time">2015-09-06 09:21</span>
+                                <span class="icon"><i data-toggle="tooltip" data-placement="right" title="朋友" class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                        <div class="c-content">
+                            <a href="">  
+                                <p>版主的murmur...</p>
+                                <div>
+                                    <h4 class="color-primary">連結版型2：大張圖片</h4>
+                                    <p>                            
+                                        <span>我們熱愛世界各地的部落文化及地方傳統工藝，手作商品融合各地特色並加入新的元素，而</span>
+                                        <span class="color-primary">看更多...</span>                                           
+                                    </p>
+                                </div>       
+                                <div class="c-image-wrap">
+                                    <div class="c-image">
+                                          <img src="http://fsp.youthwant.com/images/580_1591803534448261.jpg" alt="">
+                                    </div>
+                                </div>                
+                            </a>
+                        </div>
+                        <div class="c-social">
+                            <a href="#" class="thumbs">
+                                <i class="fa fa-thumbs-o-up"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <a href="#" class="comment">
+                                <i class="fa fa-comment-o"></i>
+                                <span class="badge">99999</span>
+                            </a>
+                            <div class="dropdown">
+                                <a href="" class="btn btn-primary dropdown-toggle share" data-toggle="dropdown">
+                                    分享<span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href=""><i class="sprite sprite-icon_fb_s"></i>Facebook</a></li>
+                                    <li><a href=""><i class="sprite sprite-icon_plus"></i>Google+</a></li>         
+                                    <li><a href=""><i class="sprite sprite-icon_weibo"></i>微博</a></li>   
+                                    <li><a href=""><i class="sprite sprite-icon_line"></i></i>Line</a></li>        
+                                </ul>                                
+                            </div>
+                            <a href="" class="btn btn-link">
+                                <i class="fa fa-star"></i>收藏
+                            </a>
+                            <div class="facebook-like" data-href="/1152646664752210/status/1152646664752210_1196641407019402" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1401149743479571&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 69px; height: 20px;"><iframe name="f3aaa8d9eac1b18" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/plugins/like.php?action=like&amp;app_id=1401149743479571&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FuN4_cXtJDGb.js%3Fversion%3D42%23cb%3Df39c5b73ccd3f98%26domain%3Dflog.youthwant.com.tw%26origin%3Dhttp%253A%252F%252Fflog.youthwant.com.tw%252Ff2c332b520d813c%26relation%3Dparent.parent&amp;container_width=15&amp;href=http%3A%2F%2Fflog.youthwant.com.tw%2F1152646664752210%2Fstatus%2F1152646664752210_1196641407019402&amp;layout=button_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 69px; height: 20px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <!--page number-->
+                    <nav class="text-center">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <a href="">
+                                    <span>&laquo;</span>
+                                    <span class="sr-only">previous</span>
+                                </a>
+                            </li>
+                            <li class="active"><a href="">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                            <li><a href="">5</a></li>
+                            <li>
+                                <a href="">
+                                    <span>&raquo;</span>
+                                    <span class="sr-only">nexy</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="c-page-move">
+                            共<span>178</span>頁 &nbsp;跳至第
+                            <input type="text" class="form-control">頁&nbsp;
+                            <button class="btn btn-primary">Go!</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-md-4">
+                    <!--claender-->           
+                    <div class="c-post-side"> 
+                        <div id="dpShow">
+                            <div></div>
+                        </div>
+                    </div>    
+                    <!--延伸關鍵字-->
+                    <div class="c-post-side">                        
+                        <h5>延伸關鍵字</h5>
+                        <div class="c-tag-wrap">
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLAAAAA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#H</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOoooLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HkkkOLA</a>
+                            <a href="" class="btn btn-tag btn-sm">#HOLA</a>
+                        </div>
+                    </div>   
+                    <div class="c-ad-side">
+                        <h5>日曆解說 & 300x250廣告</h5>
+                        <img src="./images/calender_post.png" alt=""> 
+                    </div>       
+                    <div class="c-ad-side">
+                        <img src="./images/300x600.png" alt="">
+                    </div>                                                
+                </div>
+            </div>				
+    </div>
+    <footer class="c-footer">
+        <div class="container">
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/help.php">線上求助</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_com.php">企業合作</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_club.php">社團合作</a>｜
+                <a href="http://www.youthwant.com.tw/ads/adsupload.php">刊登廣告</a>｜
+                <a href="http://flog.youthwant.com.tw/setting?tab=privacy">隱私權保護 </a>｜
+                <a href="http://iguang.tw/">愛逛街</a>｜
+                <a href="http://blog.roodo.com/">樂多日誌</a>｜
+                <a href="http://buzzoo.tw/about">朋友圈外 </a>｜
+                <a href="http://www.youthwant.com.tw/">優仕網首頁</a>｜
+                <a href="/new">今日特推</a>｜
+                <a href="/new/historic">歷史訪客排行</a>｜
+                <a href="/new/daily">今日訪客排行</a>｜
+                <a href="/new/fans">FB粉絲團列表</a>
+            </div>            
+            <p>
+                <span>Copyright © <a target="_blank" href="http://www.shinewant.com.tw/" class="color-primary">Shinewant Tech.</a>, 2000-2016. All rights reserved.</span> 
+            </p>    
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/TICRF.php"><span>本網站已依台灣網站內容分級規定處理 ｜ 常年法律顧問: 明沂律師事務所 陳以蓓律師</span></a>
+            </div>  
+        </div>
+    </footer>
+<!--案贊燈箱燈箱-->    
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-400">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title color-primary">覺得這個很讚的人</h4>
+            </div>
+            <div class="modal-body">
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>        
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            小倩媽咪。1+1的幸福
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div>         
+                <div class="media">
+                    <div class="media-left">
+                        <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                    </div>
+                    <div class="media-body">
+                        <a href="">
+                            Bangkokian 曼谷人
+                        </a>
+                    </div>
+                    <div class="media-right">
+                        <button class="btn btn-primary">前往flog</button>
+                    </div>
+                </div> 
+            </div>     
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>  
+        </div>
+    </div>
+</div>
+<!--提醒備份-->
+<!--小-->
+<div class="c-backup-xs" style="display: none;">
+    <a href="javascript:void(0);" class="backup-close btn btn-default btn-sm" id="xsClose-btn">
+        x
+    </a>
+    <a href="#" class="backup-body">
+        <div class="txt">
+            Copias de seguridad de Facebook Click Me AHORA!
+        </div>
+        <div class="image">
+            <img src="http://flog.tw/images/public/CapsuleDoll.png">
+        </div>
+    </a>
+</div>
+<!--大-->
+<div class="c-backup-lg clearfix" style="display: none;">    
+    <a href="javascript:void(0);" class="backup-close btn btn-default btn-sm" id="lgClose-btn">
+        x
+    </a>
+    <a href="#" class="backup-body">
+        <div class="txt">            
+            ¿Es usted una copia de seguridad de facebook?
+        </div>
+        <div class="image">
+            <img src="http://flog.tw/images/public/CapsuleDoll.png">
+        </div>
+    </a>    
+</div>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/datepicker/bootstrap-datepicker.js"></script>
+    <script src="js/datepicker/bootstrap-datepicker.TW.js" charset="UTF-8"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/remindBackup.js"></script>
+    <script src="js/slick.js"></script>
+    <script type="text/javascript">
+        //slick setting : slider plugin
+        $(document).on('ready', function () {
+            $(".variable").slick({
+		        dots: false,
+		        infinite: true,
+		        variableWidth: true,
+                slidesToShow: 1,
+                centerMode: true,
+		        autoplay: true,//自動撥放
+		        autoplaySpeed: 1000,//自動撥放秒數                
+                rows: 1,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            prevArrow: '<button class="slick-next" style="right: 0;">Back</button>',
+                            nextArrow: '<button class="slick-prev" style="left: 0;">Forward</button>'
+                        }                    
+                    }
+                ]
+		      });              
+        });      
+        //bootstrap-datepicker3 setting : calender plugin
+        $('#dpShow div').datepicker({
+            startDate: "2004年02月04日",//最早可選擇日期
+            endDate: "today",//最晚可選擇日期
+            language: "zh-TW",//語系
+            todayBtn: true,//今天日期按鈕
+            maxViewMode: 2,//最大的單位是"年"
+            todayHighlight: true//今天日期標示            
+        });
+        $('#headDropn').on({
+            "shown.bs.dropdown": function() { this.closable = false; },
+            "click":             function() { this.closable = true; },
+            "hide.bs.dropdown":  function() { return this.closable; }
+        });
+  </script>
+</body>
+</html>

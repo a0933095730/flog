@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body role="document" style="padding: 70px 0;">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bootstrap theme</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class="container theme-showcase" role="main">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron">
+            <h1>Theme example</h1>
+            <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+        </div>
+        <!--alert 提示-->
+        <div class="test123"></div>
+        <div class="page-header">
+            <h1>◎Alert checked</h1>
+        </div>
+        <div class="alert alert-info">
+            <h4>警告視窗 / 提示框框</h4>
+            <p>
+                只有succesee, info, warning, danger
+            </p>
+            <p>
+                第二個p有多margin-top:5px
+            </p>
+            <ul>
+                <li>item1</li>
+                <li>item2</li>
+                <li>item3</li>
+            </ul>
+        </div>
+        <div class="alert alert-success alert-dismissable">
+            <span>
+          .alert-dismissable要搭配.close使用，用為關閉提示，只能用inline tag
+        </span>
+            <a href="#" title="romve" class="close glyphicon glyphicon-remove"></a>
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span> Enter a valid email address
+        </div>
+        <!--badge 徽章-->
+        <div class="page-header">
+            <h1>◎Badges checked</h1>
+        </div>
+        <div class="badge">123</div>
+        <a class="badge">123</a>
+        <button type="button" class="btn btn-primary">
+            message
+            <span class="badge">33</span>
+        </button>
+        <button type="button" class="btn btn-xs btn-primary">
+            message
+            <span class="badge">33</span>
+        </button>
+        <ul class="nav nav-pills">
+            <li class="presentation active">
+                <a href="">
+            li.active
+            <span class="badge">33</span>
+          </a>
+            </li>
+            <li class="presentation"><a href="">itme2</a></li>
+            <li class="presentation">
+                <a href="">
+            li normal
+            <span class="badge">3</span>
+          </a>
+            </li>
+        </ul>
+        <!--breadcrumbs麵包屑-->
+        <div class="page-header">
+            <h1>◎Breadcrumbs checked</h1>
+        </div>
+        <ul class="breadcrumb">
+            <li class="active"><a href="">crumb1</a></li>
+            <li><a href="">crumb2</a></li>
+            <li><a href="">crumb3</a></li>
+        </ul>
+        <div class="breadcrumb">
+            <li>item1</li>
+            <li>item2</li>
+            <li class="active">item3</li>
+        </div>
+        <!--Button-groups-->
+        <div class="page-header">
+            <h1>◎Btn-group checked</h1>
+        </div>
+        <div class="btn-group-vertical dropup" style="margin-bottom: 10px;">
+            <div class="btn btn-lg btn-primary">
+                <span class="caret"></span>
+            </div>
+            <div class="btn btn-lg btn-pink">droup caret</div>
+            <div class="btn btn-lg btn-success">caret</div>
+        </div>
+        <div class="btn-group-justified" style="margin-bottom: 10px;">
+            <div class="btn btn-lg btn-primary">btn-group style</div>
+            <div class="btn btn-lg btn-pink">btn-group style</div>
+            <div class="btn btn-lg btn-success">btn-group style</div>
+        </div>
+        <div class="btn-group" style="margin-bottom: 10px;">
+            <div class="btn btn-lg btn-primary">btn-group style</div>
+            <div class="btn btn-lg btn-pink">btn-group style</div>
+            <div class="btn btn-lg btn-success">btn-group style</div>
+        </div>
+        <div class="btn-toolbar" style="margin-bottom: 10px;">
+            <div class="btn btn-pink">btn-toolbar</div>
+            <div class="btn btn-pink">btn-toolbar</div>
+            <div class="btn btn-pink">btn-toolbar</div>
+        </div>
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <div class="btn btn-default">1</div>
+                <div class="btn btn-default">2</div>
+                <div class="btn btn-default">3</div>
+            </div>
+            <div class="btn-group">
+                <div class="btn btn-default">1</div>
+                <div class="btn btn-default">2</div>
+                <div class="btn btn-default">3</div>
+            </div>
+            <div class="btn-group">
+                <div class="btn btn-default">1</div>
+            </div>
+            <div class="btn-group">
+                <div class="btn btn-default">1</div>
+                <div class="btn btn-default">2</div>
+                <div class="btn-group dropdown">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="dropmenu-tool">
+                        dropdown
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                        <li><a href="">itme1</a></li>
+                        <li><a href="">itme2</a></li>
+                        <li><a href="">itme3</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btn-group dropdown">
+                <button type="button" class="btn btn-danger">dropDown</button>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" id="test">
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="test">
+                    <li><a href="">action1</a></li>
+                    <li><a href="">action2</a></li>
+                    <li><a href="">action3</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropup">
+                <button class="btn btn-primary">dropUp</button>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="test2">
+                    <span class="caret dropup"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="test2">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                    <li><a href="">4</a></li>
+                    <li><a href="">5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-header">
+            <h1>◎input-group</h1>
+        </div>
+        <div class="input-group input-group-lg" style="margin-top: 10px;">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="input-group-lg">
+        </div>
+        <div class="input-group" style="margin-top: 10px;">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control">
+        </div>
+        <div class="input-group input-group-sm" style="margin-top: 10px;">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" placeholder="input-group-sm">
+        </div>
+        <div class="input-group" style="margin-top: 10px;">
+            <span class="input-group-addon">$</span>
+            <input type="text" class="form-control">
+            <span class="input-group-addon">.00</span>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                    <input type="checkbox">
+                </span>
+                    <input type="text" name="" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-addon">
+                    <input type="radio">
+                </span>
+                    <input type="text" name="" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 10px;">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+              <button class="btn btn-default">Go!</button>
+            </span>
+                    <input type="text" name="" class="form-control">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" name="" class="form-control">
+                    <span class="input-group-btn">
+              <button class="btn btn-default">Go!</button>
+            </span>
+                </div>
+            </div>
+        </div>
+        <div class="page-header">
+            <h1>Glyphicon Halflings</h1>
+        </div>
+        <ul>
+            <li>
+                <h1><span class="glyphicon glyphicon-tag"></span></h1></li>
+            <li>
+                <h1><span class="glyphicon glyphicon-envelope"></span></h1></li>
+            <li>
+                <h1><span class="glyphicon glyphicon-star"></span></h1></li>
+            <li>
+                <h1><span class="glyphicon glyphicon-flag"></span></h1></li>
+            <li>
+                <h1><span class="glyphicon glyphicon-cog"></span></h1></li>
+        </ul>
+        <div class="btn-group">
+            <button class="btn btn-default"><span class="glyphicon glyphicon-align-left"></span></button>
+            <button class="btn btn-default"><span class="glyphicon glyphicon-align-center"></span></button>
+            <button class="btn btn-default"><span class="glyphicon glyphicon-align-right"></span></button>
+        </div>
+        <button class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-star"></span> Star
+        </button>
+        <button class="btn btn-primary"><span class="glyphicon glyphicon-star"></span> Star
+        </button>
+        <button class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-star"></span> Star
+        </button>
+        <button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-star"></span> Star
+        </button>
+        <div class="page-header">
+            <h1>◎Dropdown</h1>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-expanded="false" type="button">
+                Dropdown
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                <li><a href="#">Regular link</a></li>
+                <li class="disabled"><a href="#">Disabled link</a></li>
+                <li><a href="#">Another link</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Regular link</a></li>
+                <li class="disabled"><a href="#">Disabled link</a></li>
+                <li><a href="#">Another link</a></li>
+            </ul>
+        </div>
+        <div class="page-header">
+            <h1>◎tabs</h1>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Help</a>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+                    Dropdown<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-pills" style="margin-top: 10px;">
+            <li class="active">
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Help</a>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-pills nav-stacked" style="margin-top: 10px;max-width: 300px;">
+            <li class="active">
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Help</a>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="nav nav-tabs nav-justified" style="margin-top: 10px;">
+            <li class="active">
+                <a href="">Home</a>
+            </li>
+            <li class="disabled">
+                <a href="">Help</a>
+            </li>
+            <li class="dropdown">
+                <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            Dropdown
+            <span class="caret"></span>
+          </a>
+                <ul class="dropdown-menu">
+                    <li><a href="">1</a></li>
+                    <li><a href="">2</a></li>
+                    <li><a href="">3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#test3">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="test3">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="">Link</a></li>
+                        <li><a href="">Link</a></li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Action</a></li>
+                                <li><a href="">Action</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Action</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Action</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form action="" class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                    <button class="btn btn-default navbar-btn">not form</button>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Dropdown2<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">Action</a></li>
+                            <li><a href="">Another action</a></li>
+                            <li><a href="">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Separated Link</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <p class="navbar-text navbar-right">
+                        <a href="" class="navbar-link">navbar-text navbar-right</a>
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <!--+++-->
+        <div class="page-header">
+            <h1>◎page</h1>
+        </div>
+        <nav>
+            <ul class="pagination pagination-lg">
+                <li class="disabled"><a href=""><span><<</span><span class="sr-only">previous</span></a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""><span>>></span><span class="sr-only">next</span></a></li>
+             </ul>
+        </nav>
+        <nav>
+            <ul class="pagination">
+                <li class="disabled"><a href=""><span><<</span><span class="sr-only">previous</span></a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""><span>>></span><span class="sr-only">next</span></a></li>
+             </ul>
+        </nav>
+         <nav>
+             <ul class="pagination pagination-sm">
+                <li class="disabled"><a href=""><span><<</span><span class="sr-only">previous</span></a></li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href=""><span>>></span><span class="sr-only">next</span></a></li>
+             </ul>
+         </nav>
+        <nav>
+            <ul class="pager">
+                <li><a href="">Previous</a></li>
+                <li><a href="">Next</a></li>
+            </ul>
+        </nav>
+        <div class="page-header">
+            <h1>Buttons</h1>
+        </div>
+        <p>
+            <button type="button" class="btn btn-lg btn-pink disabled">disabled</button>
+            <button type="button" class="btn btn-lg btn-pink btn-block">btn-block</button>
+            <button type="button" class="btn btn-lg btn-default">Default</button>
+            <button type="button" class="btn btn-lg btn-primary">Primary</button>
+            <button type="button" class="btn btn-lg btn-success">Success</button>
+            <button type="button" class="btn btn-lg btn-info">Info</button>
+            <button type="button" class="btn btn-lg btn-warning">Warning</button>
+            <button type="button" class="btn btn-lg btn-danger">Danger</button>
+            <button type="button" class="btn btn-lg btn-link disabled">disabled</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-default">Default</button>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-sm btn-default">Default</button>
+            <button type="button" class="btn btn-sm btn-primary">Primary</button>
+            <button type="button" class="btn btn-sm btn-success">Success</button>
+            <button type="button" class="btn btn-sm btn-info">Info</button>
+            <button type="button" class="btn btn-sm btn-warning">Warning</button>
+            <button type="button" class="btn btn-sm btn-danger">Danger</button>
+            <button type="button" class="btn btn-sm btn-link">Link</button>
+        </p>
+        <p>
+            <button type="button" class="btn btn-xs btn-default">Default</button>
+            <button type="button" class="btn btn-xs btn-primary">Primary</button>
+            <button type="button" class="btn btn-xs btn-success">Success</button>
+            <button type="button" class="btn btn-xs btn-info">Info</button>
+            <button type="button" class="btn btn-xs btn-warning">Warning</button>
+            <button type="button" class="btn btn-xs btn-danger">Danger</button>
+            <button type="button" class="btn btn-xs btn-link">Link</button>
+        </p>
+        <div class="page-header">
+            <h1>Tables</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <table class="table table-condensed">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="page-header">
+            <h1>Thumbnails</h1>
+        </div>
+        <img data-src="holder.js/200x200" class="img-thumbnail" alt="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera">
+        <div class="page-header">
+            <h1>Labels</h1>
+        </div>
+        <h1>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h1>
+        <h2>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h2>
+        <h3>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h3>
+        <h4>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h4>
+        <h5>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h5>
+        <h6>
+        <span class="label label-default">Default</span>
+        <span class="label label-primary">Primary</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-danger">Danger</span>
+      </h6>
+        <p>
+            <span class="label label-default">Default</span>
+            <span class="label label-primary">Primary</span>
+            <span class="label label-success">Success</span>
+            <span class="label label-info">Info</span>
+            <span class="label label-warning">Warning</span>
+            <span class="label label-danger">Danger</span>
+        </p>
+        <div class="page-header">
+            <h1>Badges</h1>
+        </div>
+        <p>
+            <a href="#">Inbox <span class="badge">42</span></a>
+        </p>
+        <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+        </ul>
+        <div class="page-header">
+            <h1>Dropdown menus</h1>
+        </div>
+        <div class="dropdown theme-dropdown clearfix">
+            <a id="dropdownMenu1" href="#" class="sr-only dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li class="active"><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="page-header">
+            <h1>Navs</h1>
+        </div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+        <ul class="nav nav-pills" role="tablist">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+        </ul>
+        <div class="page-header">
+            <h1>Navbars</h1>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li><a href="#">Separated link</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+        <div class="page-header">
+            <h1>Alerts</h1>
+        </div>
+        <div class="alert alert-success" role="alert">
+            <strong>Well done!</strong> You successfully read this important alert message.
+        </div>
+        <div class="alert alert-info" role="alert">
+            <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
+        </div>
+        <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> Best check yo self, you're not looking too good.
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+        </div>
+        <div class="page-header">
+            <h1>Progress bars</h1>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="sr-only">60% Complete</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80% Complete (danger)</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete</span></div>
+        </div>
+        <div class="progress">
+            <div class="progress-bar progress-bar-success" style="width: 35%"><span class="sr-only">35% Complete (success)</span></div>
+            <div class="progress-bar progress-bar-warning" style="width: 20%"><span class="sr-only">20% Complete (warning)</span></div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%"><span class='sr-only'>10% Complete (danger)</span></div>
+        </div>
+        <div class="page-header">
+            <h1>List groups</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+              Cras justo odio
+            </a>
+                    <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item">Morbi leo risus</a>
+                    <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item">Vestibulum at eros</a>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="list-group">
+                    <a href="#" class="list-group-item active">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    </a>
+                    <a href="#" class="list-group-item">
+                        <h4 class="list-group-item-heading">List group item heading</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                    </a>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+        </div>
+        <div class="page-header">
+            <h1>Panels</h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+            <div class="col-sm-4">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Panel title</h3>
+                    </div>
+                    <div class="panel-body">
+                        Panel content
+                    </div>
+                </div>
+            </div>
+            <!-- /.col-sm-4 -->
+        </div>
+        <div class="page-header">
+            <h1>Wells</h1>
+        </div>
+        <div class="well">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+        </div>
+        <div class="page-header">
+            <h1>Carousel</h1>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img data-src="holder.js/1140x500/auto/#777:#555/text:First slide" alt="First slide">
+                </div>
+                <div class="item">
+                    <img data-src="holder.js/1140x500/auto/#666:#444/text:Second slide" alt="Second slide">
+                </div>
+                <div class="item">
+                    <img data-src="holder.js/1140x500/auto/#555:#333/text:Third slide" alt="Third slide">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- /container -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

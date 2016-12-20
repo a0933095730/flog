@@ -1,0 +1,131 @@
+@import "bootstrap/variables";
+@import "compass/css3";
+// 燈箱
+// --------------------------------------------------
+.modal-header{
+	h4{
+		color: #00A0E0;
+	}
+}
+.modal-400{//覺得這個很讚的人
+	@media (min-width: $screen-sm-min){
+		width: 400px;
+	}
+}
+.modal-400{
+	position: relative;
+	.modal-header{
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	.modal-body{
+		height: 500px;
+		overflow-y: scroll;
+		margin-top: 56px;		
+		@media (max-width: $screen-md-min){
+			height: 300px;
+		}
+		.media{
+			border-bottom: 1px solid $modal-header-border-color;
+			padding: 10px 0;
+			margin-top: 0;
+			&:last-child{
+				border-bottom: 0;
+			}
+			.media-body,
+			.media-left,
+			.media-right{
+				vertical-align: middle;
+			}
+			.media-body{
+				width: 200px;
+			}
+		}		
+	}
+}
+.modal-login{//登入燈箱
+	@media (min-width: $screen-sm-min){
+		width: 400px;
+	}
+	.modal-header.c-no-heading{
+		text-indent: -9999px;
+		border-bottom: 0;
+	}
+	.modal-body{
+    	padding: 0 50px 35px 50px;
+		@media (max-width: $screen-sm-min){
+			padding: 0 30px 20px 30px;
+		}
+		.c-logo{
+			text-align: center;
+			padding-bottom: 20px;			
+			img{
+				width: 40%;
+			}
+		}
+		.c-login-fb{
+			padding-bottom: 30px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #e5e5e5;
+			.btn{
+				background-color: #365899;
+				border-color: #365899;
+				color: #fff;
+				&:hover{
+					background-color: darken(#365899,5%);
+					border-color: darken(#365899,5%);
+				}
+				i{
+					font-size: 20px;
+					margin-right: 5px;
+					vertical-align: -2px;
+				}
+			}
+		}
+		.c-login-flog{
+			label,button,p,.btn-primary{
+				margin:0 0 15px 0
+			}
+			.btn-primary{
+				background-color: #00A0E0!important;
+				border-color: darken(#00A0E0, 5%)!important;
+				color: #fff!important;
+				&:hover{
+					background-color: darken(#00A0E0, 5%)!important;
+					border-color: darken(#00A0E0, 10%)!important;
+					color: #fff!important;
+				}
+			}
+			a{
+				color: #00A0E0!important;
+				&:hover, a:focus{
+					color: #006994!important;
+				}
+			}
+		}
+		.c-loading{
+			text-align: center;
+			color: #00A0E0;
+			margin-top: 20px;
+		}
+	}
+}
+.modal-modify-tag{
+	.modal-body{
+		.input-group{
+			margin-bottom: 20px; 
+		}
+	}
+}
+.multi-language{
+	text-align: center;
+	p{
+		margin-bottom: 20px;
+	}
+}
+.half-btn-wrap{
+	.btn{
+		width: 49%;
+	}
+}
