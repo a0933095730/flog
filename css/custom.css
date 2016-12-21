@@ -2349,20 +2349,25 @@ ul.c-about-me li:before {
   }
 }
 /* line 1886, ../sass/custom.scss */
-.c-login-heading {
-  height: 420px;
+.index-html-banner {
+  height: 450px;
   width: 100%;
   background-image: url(http://flog.youthwant.com.tw/themes/website/images/home_bg.png);
   background-repeat: repeat-x;
-  padding-top: 60px;
   background-color: #fff;
-  text-align: center;
   position: relative;
   z-index: 0;
   background-position: center center;
+  margin-top: -20px;
 }
-/* line 1897, ../sass/custom.scss */
-.c-login-heading:before {
+@media (max-width: 480px) {
+  /* line 1886, ../sass/custom.scss */
+  .index-html-banner {
+    height: 400px;
+  }
+}
+/* line 1900, ../sass/custom.scss */
+.index-html-banner:before {
   content: '';
   display: block;
   position: absolute;
@@ -2374,42 +2379,131 @@ ul.c-about-me li:before {
   background-color: rgba(0, 182, 255, 0.8);
   z-index: -1;
 }
-/* line 1910, ../sass/custom.scss */
-.c-login-heading .main h1 {
+/* line 1912, ../sass/custom.scss */
+.index-html-banner .container {
+  height: 100%;
+}
+/* line 1914, ../sass/custom.scss */
+.index-html-banner .container:after {
+  content: '';
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+/* line 1923, ../sass/custom.scss */
+.index-html-banner .main {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 98%;
+}
+/* line 1929, ../sass/custom.scss */
+.index-html-banner .main .main-left {
+  float: left;
+  width: 30%;
+}
+@media (max-width: 480px) {
+  /* line 1929, ../sass/custom.scss */
+  .index-html-banner .main .main-left {
+    width: 100%;
+  }
+}
+/* line 1935, ../sass/custom.scss */
+.index-html-banner .main .main-left img {
+  width: 150px;
+}
+@media (max-width: 768px) {
+  /* line 1935, ../sass/custom.scss */
+  .index-html-banner .main .main-left img {
+    width: 125px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1935, ../sass/custom.scss */
+  .index-html-banner .main .main-left img {
+    width: 100px;
+  }
+}
+/* line 1945, ../sass/custom.scss */
+.index-html-banner .main .main-right {
+  float: right;
+  width: 70%;
+  text-align: left;
+  padding: 0 10px;
+}
+@media (max-width: 480px) {
+  /* line 1945, ../sass/custom.scss */
+  .index-html-banner .main .main-right {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 1954, ../sass/custom.scss */
+.index-html-banner .main .main-right h1 {
   color: #fff;
-  font-size: 17px;
+  font-size: 34px;
   line-height: 1.3;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px #008dc5;
 }
-/* line 1915, ../sass/custom.scss */
-.c-login-heading .main p {
-  color: #fff;
-  font-size: 24px;
+@media (max-width: 992px) {
+  /* line 1954, ../sass/custom.scss */
+  .index-html-banner .main .main-right h1 {
+    font-size: 28px;
+  }
 }
-/* line 1919, ../sass/custom.scss */
-.c-login-heading .main .btn-wrap {
+@media (max-width: 768px) {
+  /* line 1954, ../sass/custom.scss */
+  .index-html-banner .main .main-right h1 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 480px) {
+  /* line 1954, ../sass/custom.scss */
+  .index-html-banner .main .main-right h1 {
+    font-size: 20px;
+  }
+}
+/* line 1971, ../sass/custom.scss */
+.index-html-banner .main .btn-wrap {
   max-width: 500px;
-  margin: 0 auto;
 }
-/* line 1922, ../sass/custom.scss */
-.c-login-heading .main .btn-wrap .btn-primary {
+/* line 1973, ../sass/custom.scss */
+.index-html-banner .main .btn-wrap .btn-index {
   border: 2px solid #fff;
   font-size: 24px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  background-color: #00a0e0;
+  color: #fff;
+  outline: none;
+}
+/* line 1980, ../sass/custom.scss */
+.index-html-banner .main .btn-wrap .btn-index:hover {
+  background-color: #33c4ff;
+  color: #fff;
 }
 @media (max-width: 768px) {
-  /* line 1922, ../sass/custom.scss */
-  .c-login-heading .main .btn-wrap .btn-primary {
+  /* line 1973, ../sass/custom.scss */
+  .index-html-banner .main .btn-wrap .btn-index {
     font-size: 20px;
   }
 }
-/* line 1929, ../sass/custom.scss */
-.c-login-heading .main .btn-wrap .btn-primary img {
+/* line 1987, ../sass/custom.scss */
+.index-html-banner .main .btn-wrap .btn-index img {
   height: 31px;
 }
+@media (max-width: 480px) {
+  /* line 1987, ../sass/custom.scss */
+  .index-html-banner .main .btn-wrap .btn-index img {
+    height: 25px;
+  }
+}
 
-/* line 1939, ../sass/custom.scss */
+/* line 2000, ../sass/custom.scss */
 label .box {
   width: 16px;
   height: 16px;
@@ -2418,61 +2512,61 @@ label .box {
   border: 1px solid #ccc;
   background-color: #e4e4e4;
 }
-/* line 1947, ../sass/custom.scss */
+/* line 2008, ../sass/custom.scss */
 label .c-open {
   display: none;
   color: #00A0E0;
 }
-/* line 1951, ../sass/custom.scss */
+/* line 2012, ../sass/custom.scss */
 label .c-close {
   color: #90949c;
 }
-/* line 1954, ../sass/custom.scss */
+/* line 2015, ../sass/custom.scss */
 label .c-text {
   font-weight: normal;
   display: none;
 }
-/* line 1958, ../sass/custom.scss */
+/* line 2019, ../sass/custom.scss */
 label input[type="radio"], label input[type="checkbox"] {
   display: none;
 }
-/* line 1960, ../sass/custom.scss */
+/* line 2021, ../sass/custom.scss */
 label input[type="radio"]:checked + .box, label input[type="checkbox"]:checked + .box {
   background-image: url(../images/public/label-check.png);
   background-color: #6cb5de;
   border-color: #6cb5de;
 }
-/* line 1965, ../sass/custom.scss */
+/* line 2026, ../sass/custom.scss */
 label input[type="radio"]:checked + .box.blue, label input[type="checkbox"]:checked + .box.blue {
   background-image: url(../images/public/label-check.png);
   background-color: #6cb5de !important;
   border-color: #6cb5de !important;
 }
-/* line 1970, ../sass/custom.scss */
+/* line 2031, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-open, label input[type="checkbox"]:checked ~ .c-open {
   display: inline;
 }
-/* line 1973, ../sass/custom.scss */
+/* line 2034, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-close, label input[type="checkbox"]:checked ~ .c-close {
   display: none;
 }
-/* line 1976, ../sass/custom.scss */
+/* line 2037, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-text, label input[type="checkbox"]:checked ~ .c-text {
   display: block;
 }
-/* line 1980, ../sass/custom.scss */
+/* line 2041, ../sass/custom.scss */
 label.disabled {
   cursor: not-allowed;
 }
 @media (max-width: 480px) {
-  /* line 1984, ../sass/custom.scss */
+  /* line 2045, ../sass/custom.scss */
   label .c-open, label .c-close {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 1992, ../sass/custom.scss */
+  /* line 2053, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu {
     display: block;
     position: static;
@@ -2484,23 +2578,23 @@ label.disabled {
     width: 100%;
   }
 
-  /* line 2002, ../sass/custom.scss */
+  /* line 2063, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu .divider {
     display: none;
   }
 
-  /* line 2005, ../sass/custom.scss */
+  /* line 2066, ../sass/custom.scss */
   .navbar-nav .dropdown-menu.header-dropdown-menu > li > a,
   .navbar-nav .dropdown-menu.header-dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
 
-  /* line 2009, ../sass/custom.scss */
+  /* line 2070, ../sass/custom.scss */
   .navbar-nav .dropdown-menu.header-dropdown-menu > li > a {
     line-height: 20px;
   }
 
-  /* line 2012, ../sass/custom.scss */
+  /* line 2073, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu > li > a {
     color: #fff;
   }
