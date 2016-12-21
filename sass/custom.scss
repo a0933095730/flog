@@ -1886,14 +1886,10 @@ ul.c-about-me{//三角形list-style
 .c-login-heading{
     height: 420px;
     width: 100%;
-    // background-image: url(http://flog.youthwant.com.tw/themes/website/images/home_bg.png);
-    // background-image: url(https://images.unsplash.com/photo-1481011784351-b0227b9f4a80?dpr=1&auto=compress,format&fit=crop&w=1199&h=797&q=80&cs=tinysrgb&crop=);
-	background-image: url(https://images.unsplash.com/photo-1456356627738-3a96db6e2e33?dpr=1&auto=format&fit=crop&w=1500&h=990&q=80&cs=tinysrgb&crop=);	
-    // background-repeat: repeat-x;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(http://flog.youthwant.com.tw/themes/website/images/home_bg.png);	
+    background-repeat: repeat-x;
     padding-top: 60px;
-    background-color: $brand-primary;
+    background-color: #fff;
     text-align: center;
     position: relative;
     z-index: 0;
@@ -1907,7 +1903,7 @@ ul.c-about-me{//三角形list-style
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.29);
+		background-color: rgba(0, 182, 255, 0.8);
         z-index: -1;
     }
     .main{
