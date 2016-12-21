@@ -973,7 +973,7 @@ body{
 			}
 			&.c-image-inner{ // page image , three image a row
 				float: left;				
-				height: 20vh;
+				height: 30vh;
 				img{
 					max-width: none;
 					@include img-height-style;
