@@ -1410,7 +1410,7 @@ html {
 
 /* line 27, ../sass/bootstrap/_scaffolding.scss */
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family: "微軟正黑體", helvetica, arial, sans-serif;
   font-size: 15px;
   line-height: 1.428571429;
   color: #1d2129;
@@ -7601,7 +7601,7 @@ button.close {
   z-index: 1070;
   display: block;
   visibility: visible;
-  font-family: helvetica, arial, sans-serif;
+  font-family: "微軟正黑體", helvetica, arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.4;
@@ -7728,7 +7728,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: helvetica, arial, sans-serif;
+  font-family: "微軟正黑體", helvetica, arial, sans-serif;
   font-size: 15px;
   font-weight: normal;
   line-height: 1.428571429;
