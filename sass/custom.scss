@@ -1898,7 +1898,7 @@ ul.c-about-me{//三角形list-style
 	background-position: center center;
 	margin-top: -20px;
 	@media (max-width: $screen-phone){
-		height: 400px;
+		height: 460px;
 	}
     &:before{
         content: '';
@@ -1959,9 +1959,9 @@ ul.c-about-me{//三角形list-style
 			}
 			h1{
 				color: #00a0e0;
-				font-size: 34px;
+				font-size: 30px;
 				line-height: 1.3;
-				letter-spacing: 1px;
+				letter-spacing: -1px;
 				margin-bottom: 20px;
     			margin-top: 15px;
 				font-weight: bold;
@@ -1999,6 +1999,9 @@ ul.c-about-me{//三角形list-style
 					}
                 }
             }
+			.btn{
+				white-space: initial;
+			}
         }        
     }
 }

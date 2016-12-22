@@ -2369,7 +2369,7 @@ ul.c-about-me li:before {
 @media (max-width: 480px) {
   /* line 1889, ../sass/custom.scss */
   .index-html-banner {
-    height: 400px;
+    height: 460px;
   }
 }
 /* line 1903, ../sass/custom.scss */
@@ -2453,9 +2453,9 @@ ul.c-about-me li:before {
 /* line 1960, ../sass/custom.scss */
 .index-html-banner .main .main-right h1 {
   color: #00a0e0;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 1.3;
-  letter-spacing: 1px;
+  letter-spacing: -1px;
   margin-bottom: 20px;
   margin-top: 15px;
   font-weight: bold;
@@ -2514,8 +2514,12 @@ ul.c-about-me li:before {
     height: 25px;
   }
 }
+/* line 2002, ../sass/custom.scss */
+.index-html-banner .main .btn-wrap .btn {
+  white-space: initial;
+}
 
-/* line 2008, ../sass/custom.scss */
+/* line 2011, ../sass/custom.scss */
 label .box {
   width: 16px;
   height: 16px;
@@ -2524,61 +2528,61 @@ label .box {
   border: 1px solid #ccc;
   background-color: #e4e4e4;
 }
-/* line 2016, ../sass/custom.scss */
+/* line 2019, ../sass/custom.scss */
 label .c-open {
   display: none;
   color: #00A0E0;
 }
-/* line 2020, ../sass/custom.scss */
+/* line 2023, ../sass/custom.scss */
 label .c-close {
   color: #90949c;
 }
-/* line 2023, ../sass/custom.scss */
+/* line 2026, ../sass/custom.scss */
 label .c-text {
   font-weight: normal;
   display: none;
 }
-/* line 2027, ../sass/custom.scss */
+/* line 2030, ../sass/custom.scss */
 label input[type="radio"], label input[type="checkbox"] {
   display: none;
 }
-/* line 2029, ../sass/custom.scss */
+/* line 2032, ../sass/custom.scss */
 label input[type="radio"]:checked + .box, label input[type="checkbox"]:checked + .box {
   background-image: url(../images/public/label-check.png);
   background-color: #6cb5de;
   border-color: #6cb5de;
 }
-/* line 2034, ../sass/custom.scss */
+/* line 2037, ../sass/custom.scss */
 label input[type="radio"]:checked + .box.blue, label input[type="checkbox"]:checked + .box.blue {
   background-image: url(../images/public/label-check.png);
   background-color: #6cb5de !important;
   border-color: #6cb5de !important;
 }
-/* line 2039, ../sass/custom.scss */
+/* line 2042, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-open, label input[type="checkbox"]:checked ~ .c-open {
   display: inline;
 }
-/* line 2042, ../sass/custom.scss */
+/* line 2045, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-close, label input[type="checkbox"]:checked ~ .c-close {
   display: none;
 }
-/* line 2045, ../sass/custom.scss */
+/* line 2048, ../sass/custom.scss */
 label input[type="radio"]:checked ~ .c-text, label input[type="checkbox"]:checked ~ .c-text {
   display: block;
 }
-/* line 2049, ../sass/custom.scss */
+/* line 2052, ../sass/custom.scss */
 label.disabled {
   cursor: not-allowed;
 }
 @media (max-width: 480px) {
-  /* line 2053, ../sass/custom.scss */
+  /* line 2056, ../sass/custom.scss */
   label .c-open, label .c-close {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 2061, ../sass/custom.scss */
+  /* line 2064, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu {
     display: block;
     position: static;
@@ -2590,23 +2594,23 @@ label.disabled {
     width: 100%;
   }
 
-  /* line 2071, ../sass/custom.scss */
+  /* line 2074, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu .divider {
     display: none;
   }
 
-  /* line 2074, ../sass/custom.scss */
+  /* line 2077, ../sass/custom.scss */
   .navbar-nav .dropdown-menu.header-dropdown-menu > li > a,
   .navbar-nav .dropdown-menu.header-dropdown-menu .dropdown-header {
     padding: 5px 15px 5px 25px;
   }
 
-  /* line 2078, ../sass/custom.scss */
+  /* line 2081, ../sass/custom.scss */
   .navbar-nav .dropdown-menu.header-dropdown-menu > li > a {
     line-height: 20px;
   }
 
-  /* line 2081, ../sass/custom.scss */
+  /* line 2084, ../sass/custom.scss */
   .dropdown-menu.header-dropdown-menu > li > a {
     color: #fff;
   }
