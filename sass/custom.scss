@@ -1230,17 +1230,19 @@ body{
 			}
 		}
 		.media-heading{
+			word-break: break-all;
 			.name{
 				font-weight: bold;
 			}
 			.picture{
 				max-width: 400px;
 				display: block;
-				margin: 10px 0 0 0;					
+				margin: 10px 0 0 0;
+				@media (max-width: $screen-phone){
+					max-width: 200px;
+				}			
 				img{
 					max-width: 100%;
-					// border: 1px solid $gray-lighter;
-					// background-color: #fff;
 				}
 			}
 		}
