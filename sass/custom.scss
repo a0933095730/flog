@@ -974,9 +974,6 @@ body{
 			&.c-image-inner{ // page image , three image a row
 				float: left;				
 				height: 30vh;
-				@media(max-width: $screen-tablet){
-					height: 25vh;
-				}
 				img{
 					max-width: none;
 					@include img-height-style;
@@ -1156,8 +1153,7 @@ body{
 				}
 			}
 			@media (max-width: $screen-tablet){
-				padding-right: 10px;
-				padding-left: 10px;	
+				padding: 9px 10px;
 			}
 		}
 	}
