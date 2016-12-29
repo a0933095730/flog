@@ -543,3 +543,26 @@ fieldset[disabled] .datepicker table tr td span.active {
     }
   }
 }
+
+
+//通知
+.navbar-show{
+	>li{
+		>a{	
+      background-color: $brand-primary;	
+			&:hover,
+			&:focus{
+				background-color: darken($brand-primary, 5%);
+			}
+		}
+	}
+	.open{
+		>a{
+			&,
+			&:hover,
+			&:focus{
+				background-color: darken($brand-primary, 5%);
+			}
+		}
+	}
+}

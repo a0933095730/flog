@@ -4741,7 +4741,7 @@ tbody.collapse.in {
   line-height: 1.428571429;
   color: #1d2129;
   white-space: nowrap;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 @media (min-width: 992px) {
@@ -7472,7 +7472,7 @@ button.close {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 10px;
+  margin: 70px 10px 10px 10px;
 }
 
 /* line 51, ../sass/bootstrap/_modals.scss */

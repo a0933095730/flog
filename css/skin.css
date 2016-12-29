@@ -445,3 +445,16 @@ fieldset[disabled] .datepicker table tr td span.active.focus, fieldset[disabled]
 fieldset[disabled] .datepicker table tr td span.active.disabled.focus, fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
   background-color: #66c3b6;
 }
+
+/* line 551, ../sass/skin.scss */
+.navbar-show > li > a {
+  background-color: #66c3b6;
+}
+/* line 553, ../sass/skin.scss */
+.navbar-show > li > a:hover, .navbar-show > li > a:focus {
+  background-color: #54bcad;
+}
+/* line 561, ../sass/skin.scss */
+.navbar-show .open > a, .navbar-show .open > a:hover, .navbar-show .open > a:focus {
+  background-color: #54bcad;
+}
