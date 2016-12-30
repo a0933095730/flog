@@ -34,12 +34,32 @@
                             <span>最新</span>
                         </a>
                     </li>
-                    <li class="dropdown">
+                    <!--通知功能-->
+                    <li class="dropdown alertMenu" id="alertMenu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <i class="fa fa-bell fa-fw fa-lg" aria-hidden="true"></i>
                             <span class="number">999+</span>
                         </a>
                         <ul class="dropdown-menu alert-menu">
+                            <li>
+                                <div class="function-row">
+                                    <span class="alert-tt">通知</span>
+                                    <a href="#" class="have-read"><span>全部標示為已讀</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="media not-read">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">未讀是灰色，已讀是白色，一開始預設都會加上class="not-read"，已讀之後再移除class</span>
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
                             <li>
                                 <a href="#" class="media">
                                     <div class="media-left">
@@ -60,18 +80,38 @@
                                     </div>
                                     <div class="media-body">
                                         <div class="txt">
-                                            <span class="font-bold">陳保如</span>剛剛在<span class="font-bold">flog</span>備份了
+                                            <span class="font-bold">陳保如</span>
+                                            <span>剛剛</span>
+                                            <span class="font-bold">flog</span>
+                                            <span>備份了</span>
                                         </div>
                                         <div class="time"><span>剛剛</span></div>
                                     </div>
                                 </a>
-                            </li>                     
+                            </li>
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <div class="function-row">
+                                    <a href="" class="show-all">顯示全部</a>
+                                </div>
+                            </li>                    
                         </ul>
                     </li>
                 </ul>            
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                     
+            <div id="navbar" class="navbar-collapse collapse">                     
                 <!--會員姓名-->
                 <ul class="nav navbar-nav navbar-right c-couple-line">
                     <li class="dropdown" id="headDrop">
@@ -1378,6 +1418,7 @@
     <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="js/datepicker/bootstrap-datepicker.js"></script>
     <script src="js/datepicker/bootstrap-datepicker.TW.js" charset="UTF-8"></script>
+    <!--<script src="js/all.js"></script>-->
     <script src="js/tooltip.js"></script>
     <script src="js/remindBackup.js"></script>
     <script src="js/slick.js"></script>

@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>百大粉絲團</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/skin.css">-->
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand c-navbar-brand" href="#">
+                    <img src="./images/public/logo-font-color.png" width="100" height="50">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">最新</a></li>
+                </ul>      
+                <!--會員姓名-->
+                <ul class="nav navbar-nav navbar-right c-couple-line">
+                    <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
+                                Hi,Amber
+                                <span class="caret"></span>
+                            </a>
+                        <ul class="dropdown-menu">
+                            <li><a href=""><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-download"></i>立即備份</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
+                            <li class="divider"></li>
+                            <li><a href=""><i class="fa fa-fw fa-power-off"></i>登出</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--搜尋-->
+                <form action="" class="navbar-form c-navbar-form">
+                    <div class="input-group">
+                        <input type="text" name="" class="border-white form-control">
+                        <span class="input-group-btn">
+                            <div class="btn-group dropdown">
+                                <button class="btn btn-default border-white dropdown-toggle" data-toggle="dropdown" id="dropmenu-tool" aria-expanded="false">
+                                    搜尋此人
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                                    <li><a href="">搜尋此人</a></li>
+                                    <li><a href="">搜尋全部</a></li>
+                                </ul>
+                            </div>
+                            <button type="submit" class="btn btn-primary border-white">
+                                <i class="fa fa-search"></i>
+                                搜尋
+                            </button>
+                        </span>
+                    </div>
+                </form>
+            </div>        
+        </div>
+    </nav>
+    <div class="container">
+        <!--麵包屑-->
+        <ol class="breadcrumb">
+            <li><a href="">Flog首頁</a></li>
+            <li><a href="">最新</a></li>
+            <li class="active">最新備份</li>                        
+        </ol>
+        <div class="c-set-btn clearfix">
+            <a href="#" class="btn btn-group btn-all active"><i class="fa fa-fw fa-fire"></i>最新備份</a>            
+            <a href="#" class="btn btn-group btn-all"><i class="fa fa-fw fa-line-chart"></i>歷史訪客排行</a>                 
+            <a href="#" class="btn btn-group btn-all"><i class="fa fa-fw fa-cloud" aria-hidden="true"></i>今日訪客排行</a>        
+            <a href="#" class="btn btn-group btn-all"><i class="fa fa-fw fa-facebook-square" aria-hidden="true"></i>FB粉絲團排行</a>
+            <a href="#" class="btn btn-group btn-warning pull-right"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>熱門地點</a>
+            <a href="#" class="btn btn-group btn-warning pull-right"><i class="fa fa-fw fa-tags" aria-hidden="true"></i>熱門標籤</a>
+        </div>
+        <section> 
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-new">
+                        <i class="fa fa-fire fa-2x"></i>
+                    </div>                 
+                    <h2>最新備份</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="c-content">
+                    <div class="c-new clearfix">
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-new">
+                        <i class="fa fa-line-chart fa-2x"></i>
+                    </div>                 
+                    <h2>歷史訪客排行</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="c-content">
+                    <div class="c-new clearfix">
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-new">
+                        <i class="fa fa-cloud fa-2x"></i>
+                    </div>                 
+                    <h2>今日訪客排行</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="c-content">
+                    <div class="c-new clearfix">
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-new">
+                        <i class="fa fa-facebook-square fa-2x"></i>
+                    </div>                 
+                    <h2>FB粉絲團排行</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="c-content">
+                    <div class="c-new clearfix">
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div> 
+                        <div class="flex">
+                            <div class="flex-left">
+                                <img src="http://graph.facebook.com/807198099360380/picture" width="52" height="52">
+                            </div>
+                            <div class="flex-body">
+                                <a href="">
+                                    小倩媽咪。1+1的幸福
+                                </a>
+                                <div class="text">
+                                    家庭主婦
+                                </div>
+                            </div>
+                            <div class="flex-right">
+                                <button class="btn btn-primary">前往flog</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section> 
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-hotplace">
+                        <i class="fa fa-map-marker fa-2x"></i>                
+                    </div>                 
+                    <h2>熱門地點</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>               
+                <div class="c-content">
+                    <div class="c-hotplace clearfix">
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="c-big-post">
+                <div class="c-title clearfix">
+                    <div class="c-cate-icon brand-hotplace">
+                        <i class="fa fa-tags fa-2x"></i>                
+                    </div>                 
+                    <h2>熱門標籤</h2>      
+                    <div class="c-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="搜尋">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </span>
+                        </div>                        
+                    </div>
+                </div>               
+                <div class="c-content">
+                    <div class="c-hotplace clearfix">
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                        <a href="#" class="flex">
+                            <div class="flex-left">
+                                001
+                            </div>
+                            <div class="flex-body">
+                                Big City遠東巨城購物中心
+                            </div>
+                            <div class="flex-right">
+                                (3563)
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </div>    
+    <footer class="c-footer">
+        <div class="container">
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/help.php">線上求助</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_com.php">企業合作</a>｜
+                <a href="http://www.youthwant.com.tw/cooperate_club.php">社團合作</a>｜
+                <a href="http://www.youthwant.com.tw/ads/adsupload.php">刊登廣告</a>｜
+                <a href="http://flog.youthwant.com.tw/setting?tab=privacy">隱私權保護 </a>｜
+                <a href="http://iguang.tw/">愛逛街</a>｜
+                <a href="http://blog.roodo.com/">樂多日誌</a>｜
+                <a href="http://buzzoo.tw/about">朋友圈外 </a>｜
+                <a href="http://www.youthwant.com.tw/">優仕網首頁</a>｜
+                <a href="/new">今日特推</a>｜
+                <a href="/new/historic">歷史訪客排行</a>｜
+                <a href="/new/daily">今日訪客排行</a>｜
+                <a href="/new/fans">FB粉絲團列表</a>
+            </div>            
+            <p>
+                <span>Copyright © <a target="_blank" href="http://www.shinewant.com.tw/" class="color-primary">Shinewant Tech.</a>, 2000-2016. All rights reserved.</span> 
+            </p>    
+            <div class="c-m-none">
+                <a href="http://reg.youthwant.com.tw/service/TICRF.php"><span>本網站已依台灣網站內容分級規定處理 ｜ 常年法律顧問: 明沂律師事務所 陳以蓓律師</span></a>
+            </div>  
+        </div>
+    </footer>
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
