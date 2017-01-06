@@ -585,7 +585,7 @@ body{
 //-----------------------------------------------
 .c-map{
 	height: 450px;
-	background-image: url('http://www.madmanblog.com/wp-content/uploads/2012/08/Rome-Google-Map.jpg');
+	background-image: url('https://flog.tw/images/public/nonopen.jpg');
 	@include bg-center;
 	&:after{
 		@include black-mask;
@@ -856,17 +856,18 @@ body{
 			float:left;
     		padding: 5px 10px 0 10px;
 			width: calc(100% - 100px);
-			.name{
-				// font-size: $font-size-large;
-				font-size: 16px;
+			.name{				
+				font-size: 18px;
+				font-weight: bold;
 				@media (max-width: $screen-phone){
 					font-size: 15px;
 				}
 			}
 			.time{
 				color: $brand-primary;
-				font-size: $font-size-large;
-				font-weight: bold;
+				// font-size: $font-size-large;
+				font-size: 16px;
+				// font-weight: bold;
 				@media (max-width: $screen-tablet){	
 					font-size: $font-size-base;
 				}
@@ -913,6 +914,7 @@ body{
 		color: $gray-base;		
 		&:hover{
 			text-decoration: none;
+			// text-decoration: underline;
 			.color-primary{
 				color: darken($brand-primary, 15%)!important;
 			}
@@ -1338,7 +1340,7 @@ body{
 	margin-bottom: 20PX;
 	padding: 12px;	
 	h3,h5{
-		color: $brand-primary;
+		// color: $brand-primary;
 		margin-top: 0;
 	}
 	&.c-rrs{
@@ -1466,6 +1468,12 @@ ul.c-about-me{//三角形list-style
 				padding: 12px 26px 0 0;
 				float: right;
 			}
+		}
+	}
+	.c-select{
+		@media (min-width: $screen-desktop){
+			width: 300px;
+			float: right;
 		}
 	}
 	&.brand-all{ //百大粉絲 /設定 = 深藍
@@ -2219,6 +2227,7 @@ label{	//checkbox and radio change image
 		align-items: center;
 		@media(max-width: $screen-desktop){
 			width: 100%;
+			padding: 10px 0;
 		}		
 		.flex-left{
 			flex: none;
@@ -2236,6 +2245,22 @@ label{	//checkbox and radio change image
 				color: $gray-light;
 			}
 		}
+		.flex-manage{
+			flex: none;
+			text-align: center;
+			width: 70px;
+			font-size: 14px;
+			margin: 0 15px;
+			.user-hide{
+				color: #ff0000;
+			}
+			@media(max-width: $screen-phone){
+				margin-right: 0;
+			}		
+			span{
+				font-size: 15px;
+			}
+		}
 		.flex-right{
 			flex: none;
 			@media (max-width: $screen-phone){
@@ -2245,6 +2270,29 @@ label{	//checkbox and radio change image
 	}
 }
 //熱門地點
+.c-hotplace-menu{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	padding: 0 10px 10px 10px;
+	li{
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		a{
+			display: block;
+			border: 1px solid $brand-warning;
+			color: $brand-warning;
+			padding: 5px;
+			border-radius: 4px;
+			&:hover,
+			&.active{
+				background-color: $brand-warning;;
+				color: #fff;
+			}
+		}
+	}	
+}
 .c-hotplace{
 	.flex{
 		width: 33.333%;
@@ -2258,7 +2306,7 @@ label{	//checkbox and radio change image
 		}
 		.flex-left{
 			flex: none;
-			background-color: #f60;
+			background-color: $brand-warning;
 			color: #fff;
 			padding: 3px;
 			border-radius: 3px;

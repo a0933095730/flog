@@ -4185,14 +4185,14 @@ select[multiple].input-lg,
 /* line 75, ../sass/bootstrap/_buttons.scss */
 .btn-warning {
   color: #fff;
-  background-color: #f97c2b;
-  border-color: #f86d12;
+  background-color: #ff6600;
+  border-color: #e65c00;
 }
 /* line 11, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-warning:hover, .btn-warning:focus, .btn-warning.focus, .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
   color: #fff;
-  background-color: #ea6007;
-  border-color: #c85206;
+  background-color: #cc5200;
+  border-color: #a84300;
 }
 /* line 21, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-warning:active, .btn-warning.active, .open > .btn-warning.dropdown-toggle {
@@ -4200,12 +4200,12 @@ select[multiple].input-lg,
 }
 /* line 29, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-warning.disabled, .btn-warning.disabled:hover, .btn-warning.disabled:focus, .btn-warning.disabled.focus, .btn-warning.disabled:active, .btn-warning.disabled.active, .btn-warning[disabled], .btn-warning[disabled]:hover, .btn-warning[disabled]:focus, .btn-warning[disabled].focus, .btn-warning[disabled]:active, .btn-warning[disabled].active, fieldset[disabled] .btn-warning, fieldset[disabled] .btn-warning:hover, fieldset[disabled] .btn-warning:focus, fieldset[disabled] .btn-warning.focus, fieldset[disabled] .btn-warning:active, fieldset[disabled] .btn-warning.active {
-  background-color: #f97c2b;
-  border-color: #f86d12;
+  background-color: #ff6600;
+  border-color: #e65c00;
 }
 /* line 40, ../sass/bootstrap/mixins/_buttons.scss */
 .btn-warning .badge {
-  color: #f97c2b;
+  color: #ff6600;
   background-color: #fff;
 }
 
@@ -6317,11 +6317,11 @@ a.label:hover, a.label:focus {
 
 /* line 60, ../sass/bootstrap/_labels.scss */
 .label-warning {
-  background-color: #f97c2b;
+  background-color: #ff6600;
 }
 /* line 7, ../sass/bootstrap/mixins/_labels.scss */
 .label-warning[href]:hover, .label-warning[href]:focus {
-  background-color: #ea6007;
+  background-color: #cc5200;
 }
 
 /* line 64, ../sass/bootstrap/_labels.scss */
@@ -6645,7 +6645,7 @@ a.thumbnail.active {
 
 /* line 81, ../sass/bootstrap/_progress-bars.scss */
 .progress-bar-warning {
-  background-color: #f97c2b;
+  background-color: #ff6600;
 }
 /* line 7, ../sass/bootstrap/mixins/_progress-bar.scss */
 .progress-striped .progress-bar-warning {

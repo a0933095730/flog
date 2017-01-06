@@ -235,11 +235,6 @@ label input[type="radio"]:checked + .box, label input[type="checkbox"]:checked +
   color: #3e9e91 !important;
 }
 
-/* line 303, ../sass/skin.scss */
-.c-post-side h3, .c-post-side h5 {
-  color: #66c3b6;
-}
-
 /* line 309, ../sass/skin.scss */
 ul.c-about-me li:before {
   color: #66c3b6;
