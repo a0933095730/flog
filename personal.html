@@ -22,31 +22,111 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand c-navbar-brand" href="#">
-                    <img src="./images/public/logo-font-color.png" width="100" height="50">
-                </a>
+                <a href="main.html" class="navbar-brand c-navbar-brand">
+                    <img src="./images/public/logo-font-color.png">
+                </a>     
+                <ul class="nav navbar-show">
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-id-card fa-fw fa-lg" aria-hidden="true"></i>
+                            <span>最新</span>
+                        </a>
+                    </li>
+                    <!--通知功能-->
+                    <li class="dropdown alertMenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell fa-fw fa-lg" aria-hidden="true"></i>
+                            <span class="number">999+</span>
+                        </a>
+                        <ul class="dropdown-menu alert-menu">
+                            <li>
+                                <div class="function-row">
+                                    <span class="alert-tt">通知</span>
+                                    <a href="#" class="have-read"><span>全部標示為已讀</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="media not-read">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">未讀是灰色，已讀是白色，一開始預設都會加上class="not-read"，已讀之後再移除class</span>
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>剛剛在<span class="font-bold">flog</span>備份了
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li>    
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>
+                                            <span>剛剛</span>
+                                            <span class="font-bold">flog</span>
+                                            <span>備份了</span>
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <div class="function-row">
+                                    <a href="" class="show-all">顯示全部</a>
+                                </div>
+                            </li>                    
+                        </ul>
+                    </li>
+                </ul>            
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">最新</a></li>
-                </ul>      
+            <div id="navbar" class="navbar-collapse collapse">                     
                 <!--會員姓名-->
                 <ul class="nav navbar-nav navbar-right c-couple-line">
-                    <li class="dropdown">
+                    <li class="dropdown" id="headDrop">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
                                 Hi,Amber
                                 <span class="caret"></span>
                             </a>
-                        <ul class="dropdown-menu">
-                            <li><a href=""><i class="fa fa-user" aria-hidden="true"></i>個人主頁</a></li>
-                            <li><a href=""><i class="fa fa-download" aria-hidden="true"></i>立即備份</a></li>
-                            <li><a href=""><i class="fa fa-cog" aria-hidden="true"></i>樣式設定</a></li>
-                            <li><a href=""><i class="fa fa-eye-slash" aria-hidden="true"></i>隱私設定</a></li>
-                            <li><a href=""><i class="fa fa-star" aria-hidden="true"></i>我的收藏</a></li>
-                            <li><a href=""><i class="fa fa-globe" aria-hidden="true"></i>語言切換</a></li>
+                        <ul class="dropdown-menu header-dropdown-menu">
+                            <li><a href="personal.html"><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-download"></i>立即備份</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
+                            <li><a href="hashTag.html"><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
                             <li class="divider"></li>
-                            <li><a href=""><i class="fa fa-power-off" aria-hidden="true"></i>登出</a></li>
+                            <li><a href=""><i class="fa fa-fw fa-power-off"></i>登出</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -60,19 +140,19 @@
                                     搜尋此人
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                                <ul class="dropdown-menu dropdown-menu-up" aria-labelledby="dropmenu-tool">
                                     <li><a href="">搜尋此人</a></li>
                                     <li><a href="">搜尋全部</a></li>
                                 </ul>
-                            </div>
+                            </div>                  
                             <button type="submit" class="btn btn-primary border-white">
-                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <i class="fa fa-search"></i>
                                 搜尋
                             </button>
                         </span>
                     </div>
                 </form>
-            </div>        
+            </div>          
         </div>
     </nav>
     <div class="container">

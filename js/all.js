@@ -19,12 +19,12 @@ $('.text-exposed-hide').on('click',function(){
 });
 
 
-$('li.dropdown.alertMenu a').on('click', function (event) {
-    $(this).parent().toggleClass("open");
-});
+// $('li.alertMenu a').on('click', function (event) {
+//     $(this).parent().toggleClass("open");
+// });
 
-$('body').on('click', function (e) {
-    if (!$('li.dropdown.alertMenu').is(e.target) && $('li.dropdown.alertMenu').has(e.target).length === 0 && $('.open').has(e.target).length === 0) {
-        $('li.dropdown.alertMenu').removeClass('open');
-    }
-});
+// $('body').on('click', function (e) {
+//     if (!$('li.alertMenu').is(e.target) && $('li.alertMenu').has(e.target).length === 0 && $('.open').has(e.target).length === 0) {
+//         $('li.alertMenu').removeClass('open');
+//     }
+// });

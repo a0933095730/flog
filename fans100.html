@@ -20,29 +20,109 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand c-navbar-brand" href="#">
-                    <img src="./images/public/logo-font-color.png" width="100" height="50">
-                </a>
+                <a href="main.html" class="navbar-brand c-navbar-brand">
+                    <img src="./images/public/logo-font-color.png">
+                </a>     
+                <ul class="nav navbar-show">
+                    <li class="">
+                        <a href="#">
+                            <i class="fa fa-id-card fa-fw fa-lg" aria-hidden="true"></i>
+                            <span>最新</span>
+                        </a>
+                    </li>
+                    <!--通知功能-->
+                    <li class="dropdown alertMenu">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="fa fa-bell fa-fw fa-lg" aria-hidden="true"></i>
+                            <span class="number">999+</span>
+                        </a>
+                        <ul class="dropdown-menu alert-menu">
+                            <li>
+                                <div class="function-row">
+                                    <span class="alert-tt">通知</span>
+                                    <a href="#" class="have-read"><span>全部標示為已讀</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="media not-read">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">未讀是灰色，已讀是白色，一開始預設都會加上class="not-read"，已讀之後再移除class</span>
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>剛剛在<span class="font-bold">flog</span>備份了
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li>    
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>
+                                            <span>剛剛</span>
+                                            <span class="font-bold">flog</span>
+                                            <span>備份了</span>
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="media">
+                                    <div class="media-left">
+                                        <img src="http://graph.facebook.com/1152646664752210/picture">
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="txt">
+                                            <span class="font-bold">陳保如</span>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試
+                                        </div>
+                                        <div class="time"><span>剛剛</span></div>
+                                    </div>
+                                </a>
+                            </li> 
+                            <li>
+                                <div class="function-row">
+                                    <a href="" class="show-all">顯示全部</a>
+                                </div>
+                            </li>                    
+                        </ul>
+                    </li>
+                </ul>            
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">最新</a></li>
-                </ul>      
+            <div id="navbar" class="navbar-collapse collapse">                     
                 <!--會員姓名-->
                 <ul class="nav navbar-nav navbar-right c-couple-line">
-                    <li class="dropdown">
+                    <li class="dropdown" id="headDrop">
                             <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                                 <div class="c-circle-avatar"><img src="http://graph.facebook.com/1152646664752210/picture"></div>
                                 Hi,Amber
                                 <span class="caret"></span>
                             </a>
-                        <ul class="dropdown-menu">
-                            <li><a href=""><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
-                            <li><a href=""><i class="fa fa-fw fa-download"></i>立即備份</a></li>
-                            <li><a href=""><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
-                            <li><a href=""><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
-                            <li><a href=""><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
-                            <li><a href=""><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
+                        <ul class="dropdown-menu header-dropdown-menu">
+                            <li><a href="personal.html"><i class="fa fa-fw fa-user"></i>個人主頁</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-download"></i>立即備份</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-cog"></i>樣式設定</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-eye-slash"></i>隱私設定</a></li>
+                            <li><a href="hashTag.html"><i class="fa fa-fw fa-star"></i>我的收藏</a></li>
+                            <li><a href="setting.html"><i class="fa fa-fw fa-globe"></i>語言切換</a></li>
                             <li class="divider"></li>
                             <li><a href=""><i class="fa fa-fw fa-power-off"></i>登出</a></li>
                         </ul>
@@ -58,11 +138,11 @@
                                     搜尋此人
                                     <span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu" aria-labelledby="dropmenu-tool">
+                                <ul class="dropdown-menu dropdown-menu-up" aria-labelledby="dropmenu-tool">
                                     <li><a href="">搜尋此人</a></li>
                                     <li><a href="">搜尋全部</a></li>
                                 </ul>
-                            </div>
+                            </div>                  
                             <button type="submit" class="btn btn-primary border-white">
                                 <i class="fa fa-search"></i>
                                 搜尋
@@ -70,7 +150,7 @@
                         </span>
                     </div>
                 </form>
-            </div>        
+            </div>          
         </div>
     </nav>
     <div class="container">
@@ -96,55 +176,487 @@
                     </div>
                 </div>
                 <div class="c-content">
-                    <ul class="c-album clearfix">
-                        <li><a href=""><img src="http://blog.liidda.com.tw/wp-content/uploads/2015/07/%E9%BA%A5%E7%95%B6%E5%8B%9E4.jpg" title="1"></a></li>
-                        <li><a href=""><img src="https://pbs.twimg.com/profile_images/639828686431256576/qBrSeNWh.jpg" title="2"></a></li>
-                        <li><a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/2000px-Adidas_Logo.svg.png" title="3"></a></li>
-                        <li><a href=""><img src="https://s1.yimg.com/bt/api/res/1.2/M7vS95b2fvSzHFeFStPk0A--/YXBwaWQ9eW5ld3NfbGVnbztxPTc1O3c9NjAw/http://l.yimg.com/os/mit/media/m/social/images/social_default_logo-1481777.png" title="4"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/579703_10152149885328933_2164746_n.jpg?oh=a78202e83a56b01ebfe43868beb8a8c4&oe=5873F814" title="5"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/12742121_10154202901837069_6608034819254080375_n.png?oh=4dc57a44f3ce36d521279a98265fdf38&oe=58405BDC" title="6"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/12742121_10154202901837069_6608034819254080375_n.png?oh=4dc57a44f3ce36d521279a98265fdf38&oe=58405BDC" title="7"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/08.jpg" title="8"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/09.jpg" title="9"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/10.jpg" title="10"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/14199736_10154593498429267_3224308257199709961_n.jpg?oh=98f47ee1a3b6c171e492be6d8d38014e&oe=5871D81B" title="11"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/12.jpg" title="12"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/13.jpg" title="13"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/1017325_814956761869750_3393034778898458516_n.png?oh=8f0252f5d000d9812fb27335b2f6874b&oe=58405CD7" title="14"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/15.jpg" title="15"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/12.jpg" title="16"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/17.jpg" title="17"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/c22.22.276.276/s160x160/644209_425884084124401_752723790_n.png?oh=ec028da7fff1fe6ed1593fd5d69493c7&oe=58844A48" title="18"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/19.jpg" title="19"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/20.jpg" title="20"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/21.jpg" title="21"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/22.jpg" title="22"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/23.jpg" title="23"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/24.jpg" title="24"></a></li>   
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/01.jpg" title="1"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/02.jpg" title="2"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/03.jpg" title="3"></a></li>
-                        <li><a href=""><img src="https://s1.yimg.com/bt/api/res/1.2/M7vS95b2fvSzHFeFStPk0A--/YXBwaWQ9eW5ld3NfbGVnbztxPTc1O3c9NjAw/http://l.yimg.com/os/mit/media/m/social/images/social_default_logo-1481777.png" title="4"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/579703_10152149885328933_2164746_n.jpg?oh=a78202e83a56b01ebfe43868beb8a8c4&oe=5873F814" title="5"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/12742121_10154202901837069_6608034819254080375_n.png?oh=4dc57a44f3ce36d521279a98265fdf38&oe=58405BDC" title="6"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/07.jpg" title="7"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/08.jpg" title="8"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/09.jpg" title="9"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/10.jpg" title="10"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/14199736_10154593498429267_3224308257199709961_n.jpg?oh=98f47ee1a3b6c171e492be6d8d38014e&oe=5871D81B" title="11"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/12.jpg" title="12"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/13.jpg" title="13"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/1017325_814956761869750_3393034778898458516_n.png?oh=8f0252f5d000d9812fb27335b2f6874b&oe=58405CD7" title="14"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/15.jpg" title="15"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/16.jpg" title="16"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/17.jpg" title="17"></a></li>
-                        <li><a href=""><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/c22.22.276.276/s160x160/644209_425884084124401_752723790_n.png?oh=ec028da7fff1fe6ed1593fd5d69493c7&oe=58844A48" title="18"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/19.jpg" title="19"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/20.jpg" title="20"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/21.jpg" title="21"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/22.jpg" title="22"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/23.jpg" title="23"></a></li>
-                        <li><a href=""><img src="http://csscoke.com/example/special_album/pic/24.jpg" title="24"></a></li>                
+                    <ul class="c-album clearfix TW_list">
+                                            <li class="f_TW_photo 歐陽妮妮">
+                            <a href="https://flog.tw/168010689889922" title="歐陽妮妮"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/168010689889922.jpg" onerror="this.src='//graph.facebook.com/168010689889922/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/168010689889922.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo undine">
+                            <a href="https://flog.tw/520835927950681" title="Undine"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/520835927950681.jpg" onerror="this.src='//graph.facebook.com/520835927950681/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/520835927950681.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 郭采潔">
+                            <a href="https://flog.tw/111171231520" title="郭采潔"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/111171231520.jpg" onerror="this.src='//graph.facebook.com/111171231520/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/111171231520.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 羅志祥_show">
+                            <a href="https://flog.tw/190260340295" title="羅志祥 SHOW"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/190260340295.jpg" onerror="this.src='//graph.facebook.com/190260340295/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/190260340295.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 壹週刊">
+                            <a href="https://flog.tw/125693144152226" title="壹週刊"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/125693144152226.jpg" onerror="this.src='//graph.facebook.com/125693144152226/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/125693144152226.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo yahoo!奇摩新聞">
+                            <a href="https://flog.tw/109249609124014" title="Yahoo!奇摩新聞"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/109249609124014.jpg" onerror="this.src='//graph.facebook.com/109249609124014/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/109249609124014.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 曾之喬">
+                            <a href="https://flog.tw/138666599478477" title="曾之喬"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/138666599478477.jpg" onerror="this.src='//graph.facebook.com/138666599478477/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/138666599478477.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 林柏昇_kid">
+                            <a href="https://flog.tw/230277170528" title="林柏昇 KID"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/230277170528.jpg" onerror="this.src='//graph.facebook.com/230277170528/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/230277170528.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo jeremy_lin_林書豪">
+                            <a href="https://flog.tw/1456505354584068" title="Jeremy Lin 林書豪"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/1456505354584068.jpg" onerror="this.src='//graph.facebook.com/1456505354584068/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/1456505354584068.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 郭雪芙_puff">
+                            <a href="https://flog.tw/111351378883884" title="郭雪芙 Puff"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/111351378883884.jpg" onerror="this.src='//graph.facebook.com/111351378883884/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/111351378883884.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 在不瘋狂就等死">
+                            <a href="https://flog.tw/293772190779322" title="在不瘋狂就等死"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/293772190779322.jpg" onerror="this.src='//graph.facebook.com/293772190779322/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/293772190779322.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 豆花妹_蔡黃汝">
+                            <a href="https://flog.tw/122246424482095" title="豆花妹 蔡黃汝"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/122246424482095.jpg" onerror="this.src='//graph.facebook.com/122246424482095/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/122246424482095.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 柯文哲">
+                            <a href="https://flog.tw/136845026417486" title="柯文哲"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/136845026417486.jpg" onerror="this.src='//graph.facebook.com/136845026417486/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/136845026417486.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo teepr_趣味新聞">
+                            <a href="https://flog.tw/1433215316907826" title="TEEPR 趣味新聞"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/1433215316907826.jpg" onerror="this.src='//graph.facebook.com/1433215316907826/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/1433215316907826.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo bomb01">
+                            <a href="https://flog.tw/329591000528836" title="boMb01"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/329591000528836.jpg" onerror="this.src='//graph.facebook.com/329591000528836/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/329591000528836.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo h.h先生">
+                            <a href="https://flog.tw/530963076995302" title="H.H先生"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/530963076995302.jpg" onerror="this.src='//graph.facebook.com/530963076995302/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/530963076995302.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 九把刀_giddens_ko">
+                            <a href="https://flog.tw/122355981186846" title="九把刀 Giddens Ko"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/122355981186846.jpg" onerror="this.src='//graph.facebook.com/122355981186846/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/122355981186846.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo g.e.m._鄧紫棋">
+                            <a href="https://flog.tw/13062516037" title="G.E.M. 鄧紫棋"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/13062516037.jpg" onerror="this.src='//graph.facebook.com/13062516037/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/13062516037.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo lativ">
+                            <a href="https://flog.tw/463654160373865" title="lativ"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/463654160373865.jpg" onerror="this.src='//graph.facebook.com/463654160373865/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/463654160373865.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo cherng">
+                            <a href="https://flog.tw/227914967279486" title="Cherng"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/227914967279486.jpg" onerror="this.src='//graph.facebook.com/227914967279486/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/227914967279486.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 柯震東_kai_ko">
+                            <a href="https://flog.tw/194610233900710" title="柯震東 Kai Ko"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/194610233900710.jpg" onerror="this.src='//graph.facebook.com/194610233900710/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/194610233900710.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 鬼鬼_吳映潔">
+                            <a href="https://flog.tw/299470720037" title="鬼鬼 吳映潔"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/299470720037.jpg" onerror="this.src='//graph.facebook.com/299470720037/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/299470720037.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo duncan">
+                            <a href="https://flog.tw/544241848968882" title="Duncan"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/544241848968882.jpg" onerror="this.src='//graph.facebook.com/544241848968882/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/544241848968882.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 王心凌_cyndi_wang">
+                            <a href="https://flog.tw/115291309774" title="王心凌 Cyndi Wang"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/115291309774.jpg" onerror="this.src='//graph.facebook.com/115291309774/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/115291309774.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo by2">
+                            <a href="https://flog.tw/281465241804" title="BY2"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/281465241804.jpg" onerror="this.src='//graph.facebook.com/281465241804/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/281465241804.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 五分埔-批發">
+                            <a href="https://flog.tw/295026503944052" title="五分埔-批發"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/295026503944052.jpg" onerror="this.src='//graph.facebook.com/295026503944052/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/295026503944052.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo muji_無印良品生活研究所">
+                            <a href="https://flog.tw/130324940344962" title="MUJI 無印良品生活研究所"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/130324940344962.jpg" onerror="this.src='//graph.facebook.com/130324940344962/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/130324940344962.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 五月天_mayday">
+                            <a href="https://flog.tw/182099101856685" title="五月天 Mayday"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/182099101856685.jpg" onerror="this.src='//graph.facebook.com/182099101856685/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/182099101856685.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 小三魔法棒(小三美日)">
+                            <a href="https://flog.tw/107305345968232" title="小三魔法棒(小三美日)"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/107305345968232.jpg" onerror="this.src='//graph.facebook.com/107305345968232/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/107305345968232.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo ettoday新聞雲">
+                            <a href="https://flog.tw/242305665805605" title="ETtoday新聞雲"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/242305665805605.jpg" onerror="this.src='//graph.facebook.com/242305665805605/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/242305665805605.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 陳妍希_michelle">
+                            <a href="https://flog.tw/170696801926" title="陳妍希 Michelle"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/170696801926.jpg" onerror="this.src='//graph.facebook.com/170696801926/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/170696801926.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo tvbs_新聞">
+                            <a href="https://flog.tw/220050085932" title="TVBS 新聞"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/220050085932.jpg" onerror="this.src='//graph.facebook.com/220050085932/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/220050085932.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo nico品筠&amp;kim京燁_【那對夫妻】">
+                            <a href="https://flog.tw/1199693796723436" title="Nico品筠&amp;Kim京燁 【那對夫妻】"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/1199693796723436.jpg" onerror="this.src='//graph.facebook.com/1199693796723436/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/1199693796723436.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo ettoday寵物雲">
+                            <a href="https://flog.tw/160915837329440" title="ETtoday寵物雲"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/160915837329440.jpg" onerror="this.src='//graph.facebook.com/160915837329440/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/160915837329440.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo just_fun_輕鬆讚一下">
+                            <a href="https://flog.tw/489676984434014" title="Just fun 輕鬆讚一下"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/489676984434014.jpg" onerror="this.src='//graph.facebook.com/489676984434014/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/489676984434014.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 台灣達人秀">
+                            <a href="https://flog.tw/251305151547796" title="台灣達人秀"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/251305151547796.jpg" onerror="this.src='//graph.facebook.com/251305151547796/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/251305151547796.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo ob嚴選">
+                            <a href="https://flog.tw/397486643273" title="OB嚴選"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/397486643273.jpg" onerror="this.src='//graph.facebook.com/397486643273/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/397486643273.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo line_taiwan-_再line一下">
+                            <a href="https://flog.tw/350438191643697" title="LINE Taiwan- 再LINE一下"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/350438191643697.jpg" onerror="this.src='//graph.facebook.com/350438191643697/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/350438191643697.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 蕭敬騰_jam_hsiao">
+                            <a href="https://flog.tw/222171150645" title="蕭敬騰 Jam Hsiao"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/222171150645.jpg" onerror="this.src='//graph.facebook.com/222171150645/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/222171150645.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 麥當勞">
+                            <a href="https://flog.tw/101615286547831" title="麥當勞"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/101615286547831.jpg" onerror="this.src='//graph.facebook.com/101615286547831/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/101615286547831.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 韓瑜angel_han">
+                            <a href="https://flog.tw/276870219315" title="韓瑜Angel Han"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/276870219315.jpg" onerror="this.src='//graph.facebook.com/276870219315/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/276870219315.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 7-eleven">
+                            <a href="https://flog.tw/145649977189" title="7-ELEVEN"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/145649977189.jpg" onerror="this.src='//graph.facebook.com/145649977189/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/145649977189.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo anden_hud（ah）">
+                            <a href="https://flog.tw/224714430890150" title="Anden Hud（AH）"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/224714430890150.jpg" onerror="this.src='//graph.facebook.com/224714430890150/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/224714430890150.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 瘋狂賣客_crazymike">
+                            <a href="https://flog.tw/154781994756" title="瘋狂賣客 Crazymike"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/154781994756.jpg" onerror="this.src='//graph.facebook.com/154781994756/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/154781994756.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 國家地理雜誌">
+                            <a href="https://flog.tw/197396410423992" title="國家地理雜誌"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/197396410423992.jpg" onerror="this.src='//graph.facebook.com/197396410423992/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/197396410423992.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 蔡依林_jolin_tsai">
+                            <a href="https://flog.tw/141391055983739" title="蔡依林 Jolin Tsai"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/141391055983739.jpg" onerror="this.src='//graph.facebook.com/141391055983739/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/141391055983739.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 7-eleven愛世界">
+                            <a href="https://flog.tw/352437819460" title="7-ELEVEN愛世界"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/352437819460.jpg" onerror="this.src='//graph.facebook.com/352437819460/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/352437819460.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 遠見雜誌">
+                            <a href="https://flog.tw/286487218798" title="遠見雜誌"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/286487218798.jpg" onerror="this.src='//graph.facebook.com/286487218798/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/286487218798.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 東森新聞">
+                            <a href="https://flog.tw/124616330906800" title="東森新聞"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/124616330906800.jpg" onerror="this.src='//graph.facebook.com/124616330906800/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/124616330906800.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 林進_飛醺卑鄙_fashion_baby">
+                            <a href="https://flog.tw/631123253682682" title="林進 飛醺卑鄙 fashion baby"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/631123253682682.jpg" onerror="this.src='//graph.facebook.com/631123253682682/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/631123253682682.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 這群人_tgop">
+                            <a href="https://flog.tw/207771325929777" title="這群人 TGOP"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/207771325929777.jpg" onerror="this.src='//graph.facebook.com/207771325929777/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/207771325929777.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo icook_愛料理">
+                            <a href="https://flog.tw/227685837266552" title="iCook 愛料理"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/227685837266552.jpg" onerror="this.src='//graph.facebook.com/227685837266552/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/227685837266552.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 隋棠_sonia_sui">
+                            <a href="https://flog.tw/144599215602127" title="隋棠 Sonia Sui"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/144599215602127.jpg" onerror="this.src='//graph.facebook.com/144599215602127/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/144599215602127.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 全聯福利中心">
+                            <a href="https://flog.tw/134004310003557" title="全聯福利中心"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/134004310003557.jpg" onerror="this.src='//graph.facebook.com/134004310003557/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/134004310003557.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 范范_范瑋琪">
+                            <a href="https://flog.tw/247607958762" title="范范 范瑋琪"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/247607958762.jpg" onerror="this.src='//graph.facebook.com/247607958762/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/247607958762.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo vonvon.me">
+                            <a href="https://flog.tw/716004461855197" title="vonvon.me"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/716004461855197.jpg" onerror="this.src='//graph.facebook.com/716004461855197/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/716004461855197.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo samsung_mobile_taiwan">
+                            <a href="https://flog.tw/100489613340306" title="Samsung Mobile Taiwan"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/100489613340306.jpg" onerror="this.src='//graph.facebook.com/100489613340306/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/100489613340306.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo r-chord">
+                            <a href="https://flog.tw/354487984641189" title="R-chord"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/354487984641189.jpg" onerror="this.src='//graph.facebook.com/354487984641189/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/354487984641189.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 帶我去旅行">
+                            <a href="https://flog.tw/175788515979" title="帶我去旅行"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/175788515979.jpg" onerror="this.src='//graph.facebook.com/175788515979/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/175788515979.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 周杰倫_jay_chou">
+                            <a href="https://flog.tw/72447883975" title="周杰倫 Jay Chou"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/72447883975.jpg" onerror="this.src='//graph.facebook.com/72447883975/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/72447883975.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 安心亞_amber_an">
+                            <a href="https://flog.tw/192348605466" title="安心亞 Amber An"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/192348605466.jpg" onerror="this.src='//graph.facebook.com/192348605466/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/192348605466.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 笑彈發射站">
+                            <a href="https://flog.tw/297102930302510" title="笑彈發射站"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/297102930302510.jpg" onerror="this.src='//graph.facebook.com/297102930302510/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/297102930302510.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 幸福空間_gorgeous_space">
+                            <a href="https://flog.tw/191820036010" title="幸福空間 Gorgeous Space"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/191820036010.jpg" onerror="this.src='//graph.facebook.com/191820036010/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/191820036010.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 86小舖商城">
+                            <a href="https://flog.tw/147753419266" title="86小舖商城"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/147753419266.jpg" onerror="this.src='//graph.facebook.com/147753419266/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/147753419266.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 馬英九">
+                            <a href="https://flog.tw/118250504903757" title="馬英九"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/118250504903757.jpg" onerror="this.src='//graph.facebook.com/118250504903757/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/118250504903757.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 彭于晏_eddie_peng">
+                            <a href="https://flog.tw/173483239738" title="彭于晏 Eddie Peng"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/173483239738.jpg" onerror="this.src='//graph.facebook.com/173483239738/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/173483239738.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 郭靜_claire">
+                            <a href="https://flog.tw/97385523899" title="郭靜 Claire"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/97385523899.jpg" onerror="this.src='//graph.facebook.com/97385523899/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/97385523899.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo sandy_&amp;_mandy">
+                            <a href="https://flog.tw/121251951220038" title="Sandy &amp; Mandy"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/121251951220038.jpg" onerror="this.src='//graph.facebook.com/121251951220038/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/121251951220038.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 田馥甄_hebe">
+                            <a href="https://flog.tw/110958532292955" title="田馥甄 Hebe"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/110958532292955.jpg" onerror="this.src='//graph.facebook.com/110958532292955/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/110958532292955.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 黑人_陳建州">
+                            <a href="https://flog.tw/74667070561" title="黑人 陳建州"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/74667070561.jpg" onerror="this.src='//graph.facebook.com/74667070561/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/74667070561.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 潘瑋柏_will_pan">
+                            <a href="https://flog.tw/174675545627" title="潘瑋柏 Will Pan"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/174675545627.jpg" onerror="this.src='//graph.facebook.com/174675545627/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/174675545627.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 蔡阿嘎">
+                            <a href="https://flog.tw/118807651515245" title="蔡阿嘎"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/118807651515245.jpg" onerror="this.src='//graph.facebook.com/118807651515245/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/118807651515245.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo ariel_lin林依晨">
+                            <a href="https://flog.tw/105328253106" title="Ariel Lin林依晨"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/105328253106.jpg" onerror="this.src='//graph.facebook.com/105328253106/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/105328253106.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 陳菊_(花媽)_市長">
+                            <a href="https://flog.tw/232716627404" title="陳菊 (花媽) 市長"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/232716627404.jpg" onerror="this.src='//graph.facebook.com/232716627404/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/232716627404.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo bii_畢書盡">
+                            <a href="https://flog.tw/167474846596252" title="Bii 畢書盡"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/167474846596252.jpg" onerror="this.src='//graph.facebook.com/167474846596252/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/167474846596252.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 食尚玩家">
+                            <a href="https://flog.tw/111515882197852" title="食尚玩家"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/111515882197852.jpg" onerror="this.src='//graph.facebook.com/111515882197852/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/111515882197852.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo 鬧一波大師">
+                            <a href="https://flog.tw/475313525851331" title="鬧一波大師"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/475313525851331.jpg" onerror="this.src='//graph.facebook.com/475313525851331/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/475313525851331.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                                            <li class="f_TW_photo byebyechuchu">
+                            <a href="https://flog.tw/119576904728174" title="Byebyechuchu"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/119576904728174.jpg" onerror="this.src='//graph.facebook.com/119576904728174/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/119576904728174.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 蘇打綠_sodagreen">
+                            <a href="https://flog.tw/167852083273193" title="蘇打綠 Sodagreen"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/167852083273193.jpg" onerror="this.src='//graph.facebook.com/167852083273193/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/167852083273193.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 曾莞婷">
+                            <a href="https://flog.tw/108059479237373" title="曾莞婷"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/108059479237373.jpg" onerror="this.src='//graph.facebook.com/108059479237373/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/108059479237373.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 林俊傑__jj_lin">
+                            <a href="https://flog.tw/193480161484" title="林俊傑  JJ Lin"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/193480161484.jpg" onerror="this.src='//graph.facebook.com/193480161484/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/193480161484.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 楊丞琳_rainie_yang">
+                            <a href="https://flog.tw/132105666869303" title="楊丞琳 Rainie Yang"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/132105666869303.jpg" onerror="this.src='//graph.facebook.com/132105666869303/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/132105666869303.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 噪咖">
+                            <a href="https://flog.tw/372319002975172" title="噪咖"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/372319002975172.jpg" onerror="this.src='//graph.facebook.com/372319002975172/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/372319002975172.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 非正常人類研究學院">
+                            <a href="https://flog.tw/345512025481589" title="非正常人類研究學院"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/345512025481589.jpg" onerror="this.src='//graph.facebook.com/345512025481589/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/345512025481589.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 全家familymart">
+                            <a href="https://flog.tw/152341009257" title="全家FamilyMart"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/152341009257.jpg" onerror="this.src='//graph.facebook.com/152341009257/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/152341009257.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo juksy_街星">
+                            <a href="https://flog.tw/195769958936" title="JUKSY 街星"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/195769958936.jpg" onerror="this.src='//graph.facebook.com/195769958936/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/195769958936.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 加藤軍台灣粉絲團_2.0">
+                            <a href="https://flog.tw/604438929590595" title="加藤軍台灣粉絲團 2.0"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/604438929590595.jpg" onerror="this.src='//graph.facebook.com/604438929590595/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/604438929590595.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 五月天_阿信">
+                            <a href="https://flog.tw/211037402285285" title="五月天 阿信"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/211037402285285.jpg" onerror="this.src='//graph.facebook.com/211037402285285/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/211037402285285.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 蔡英文_tsai_ing-wen">
+                            <a href="https://flog.tw/46251501064" title="蔡英文 Tsai Ing-wen"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/46251501064.jpg" onerror="this.src='//graph.facebook.com/46251501064/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/46251501064.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo kimberley_chen">
+                            <a href="https://flog.tw/198568133510161" title="Kimberley Chen"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/198568133510161.jpg" onerror="this.src='//graph.facebook.com/198568133510161/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/198568133510161.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 統一星巴克咖啡同好會">
+                            <a href="https://flog.tw/193072760827" title="統一星巴克咖啡同好會"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/193072760827.jpg" onerror="this.src='//graph.facebook.com/193072760827/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/193072760827.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 蘋果日報">
+                            <a href="https://flog.tw/232633627068" title="蘋果日報"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/232633627068.jpg" onerror="this.src='//graph.facebook.com/232633627068/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/232633627068.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo pazzo">
+                            <a href="https://flog.tw/102230776487685" title="PAZZO"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/102230776487685.jpg" onerror="this.src='//graph.facebook.com/102230776487685/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/102230776487685.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 張兆志____喬志先生">
+                            <a href="https://flog.tw/193077930900226" title="張兆志    喬志先生"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/193077930900226.jpg" onerror="this.src='//graph.facebook.com/193077930900226/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/193077930900226.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 天下雜誌">
+                            <a href="https://flog.tw/127628276929" title="天下雜誌"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/127628276929.jpg" onerror="this.src='//graph.facebook.com/127628276929/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/127628276929.jpg" style="display: inline;">
+                            </a>
+                        </li>
+                        <li class="f_TW_photo 好物推薦">
+                            <a href="https://flog.tw/360436493972112" title="好物推薦"> 
+                                <img class="lazy" data-original="https://fsp.youthwant.com/images/user_picture/360436493972112.jpg" onerror="this.src='//graph.facebook.com/360436493972112/picture?width=150&amp;height=150'" src="https://fsp.youthwant.com/images/user_picture/360436493972112.jpg" style="display: inline;">
+                            </a>
+                        </li>                                
                     </ul> 
                     <div class="c-see-more">
                         <button class="btn btn-default">載入更多粉絲團<i class="fa fa-ellipsis-h fa-fw"></i></button>
