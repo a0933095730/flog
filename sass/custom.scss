@@ -554,8 +554,11 @@ body{
 	}
 }
 .c-tag-two-row{
-	max-height: 82px;
-	overflow: hidden;
+	    max-height: 180px;
+		overflow: hidden;
+	@media (max-width: $screen-phone){
+		max-height: 165px;
+	}
 }
 //發掘探索
 //-----------------------------------------------
@@ -640,12 +643,12 @@ body{
 		font-size: $font-size-base;		
 		margin: 0 0 10px;
 	}
-	.c-tag-wrap{
-		margin: 0 0 30px;
-		@media (max-width: $screen-phone){
-		margin: 0 0 0;
-		}
-	}	
+	// .c-tag-wrap{
+	// 	margin: 0 0 30px;
+	// 	@media (max-width: $screen-phone){
+	// 	margin: 0 0 0;
+	// 	}
+	// }	
 }
 //web版篩選按鈕
 .c-web-btn-wrap{
