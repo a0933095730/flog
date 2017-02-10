@@ -1,114 +1,22 @@
-/* line 3, ../sass/home.scss */
-.color-gray {
-  color: #90949c !important;
-}
+.color-gray { color: #90949c !important; }
 
-/* line 6, ../sass/home.scss */
-.c-login-heading {
-  height: 420px;
-  width: 100%;
-  background-image: url(http://flog.youthwant.com.tw/themes/website/images/home_bg.png);
-  background-repeat: repeat-x;
-  padding-top: 60px;
-  background-color: #00a0e0;
-  text-align: center;
-}
-/* line 15, ../sass/home.scss */
-.c-login-heading .main h1 {
-  color: #fff;
-  font-size: 17px;
-  line-height: 1.3;
-}
-/* line 20, ../sass/home.scss */
-.c-login-heading .main p {
-  color: #fff;
-  font-size: 24px;
-}
-/* line 24, ../sass/home.scss */
-.c-login-heading .main .btn-wrap {
-  max-width: 500px;
-  margin: 0 auto;
-}
-/* line 27, ../sass/home.scss */
-.c-login-heading .main .btn-wrap .btn-primary {
-  border: 2px solid #fff;
-  font-size: 24px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-@media (max-width: 768px) {
-  /* line 27, ../sass/home.scss */
-  .c-login-heading .main .btn-wrap .btn-primary {
-    font-size: 20px;
-  }
-}
-/* line 34, ../sass/home.scss */
-.c-login-heading .main .btn-wrap .btn-primary img {
-  height: 31px;
-}
+.c-login-heading { height: 420px; width: 100%; background-image: url(http://flog.youthwant.com.tw/themes/website/images/home_bg.png); background-repeat: repeat-x; padding-top: 60px; background-color: #00a0e0; text-align: center; }
+.c-login-heading .main h1 { color: #fff; font-size: 17px; line-height: 1.3; }
+.c-login-heading .main p { color: #fff; font-size: 24px; }
+.c-login-heading .main .btn-wrap { max-width: 500px; margin: 0 auto; }
+.c-login-heading .main .btn-wrap .btn-primary { border: 2px solid #fff; font-size: 24px; -moz-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; }
+@media (max-width: 768px) { .c-login-heading .main .btn-wrap .btn-primary { font-size: 20px; } }
+.c-login-heading .main .btn-wrap .btn-primary img { height: 31px; }
 
-/* line 41, ../sass/home.scss */
-.c-login-body {
-  width: 100%;
-  padding-top: 20px;
-  text-align: center;
-  background-color: #fff;
-}
-/* line 46, ../sass/home.scss */
-.c-login-body span {
-  color: #90949c;
-}
-/* line 49, ../sass/home.scss */
-.c-login-body .heading {
-  font-size: 20px;
-}
-/* line 52, ../sass/home.scss */
-.c-login-body .main {
-  max-width: 640px;
-  margin: 0 auto;
-}
-@media (max-width: 480px) {
-  /* line 56, ../sass/home.scss */
-  .c-login-body .main .c-m-none {
-    display: none;
-  }
-}
+.c-login-body { width: 100%; padding-top: 20px; text-align: center; background-color: #fff; }
+.c-login-body span { color: #90949c; }
+.c-login-body .heading { font-size: 20px; }
+.c-login-body .main { max-width: 640px; margin: 0 auto; }
+@media (max-width: 480px) { .c-login-body .main .c-m-none { display: none; } }
 
-/* line 62, ../sass/home.scss */
-.c-login-footer {
-  background-color: #f2f2f2;
-  padding: 25px 0;
-  text-align: center;
-  font-size: 13px;
-  color: #90949c;
-  margin-top: 30px;
-}
-@media (min-width: 768px) {
-  /* line 62, ../sass/home.scss */
-  .c-login-footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-}
-/* line 74, ../sass/home.scss */
-.c-login-footer a {
-  color: #90949c;
-  text-decoration: none;
-  font-size: 12px;
-}
-/* line 79, ../sass/home.scss */
-.c-login-footer p {
-  margin-top: 10px;
-}
-@media (max-width: 480px) {
-  /* line 83, ../sass/home.scss */
-  .c-login-footer {
-    padding: 10px 0;
-  }
-  /* line 86, ../sass/home.scss */
-  .c-login-footer .c-m-none {
-    display: none;
-  }
-}
+.c-login-footer { background-color: #f2f2f2; padding: 25px 0; text-align: center; font-size: 13px; color: #90949c; margin-top: 30px; }
+@media (min-width: 768px) { .c-login-footer { position: fixed; width: 100%; bottom: 0; } }
+.c-login-footer a { color: #90949c; text-decoration: none; font-size: 12px; }
+.c-login-footer p { margin-top: 10px; }
+@media (max-width: 480px) { .c-login-footer { padding: 10px 0; }
+  .c-login-footer .c-m-none { display: none; } }

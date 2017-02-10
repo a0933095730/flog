@@ -2324,3 +2324,26 @@ label{	//checkbox and radio change image
 		}
 	}
 }
+//goTop
+#goTop{
+	display: block;
+	width: 42px;
+	height: 42px;
+	position: fixed;
+    bottom: 10px;
+    right: 10px;
+	z-index: 1020;
+	text-align: center;
+	background-position: 0 0;
+	background-image: url(https://flog.tw/images/public/ui.totop.png);
+	@include transition(background-position 0.3s ease);
+	@media(min-width: $screen-tablet){
+		&:hover{
+			background-position: 0 100%;
+		}
+	}
+	@media(max-width: $screen-phone){
+		bottom: 65px;
+		opacity: 0.7;
+	}
+}

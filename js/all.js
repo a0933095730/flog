@@ -1,30 +1,22 @@
-//phone
-// if( $(window).width() <= 480){
-//     $('.alertMenu').on('click',function(){
-//         if($(this).hasClass('open')){
-//             $('body').removeClass('modal-open');
-//         }
-//         else{
-//             $('body').addClass('modal-open');
-//         }
-//     });
-// }
-// else{}
-
-
 //text-exposed
 $('.text-exposed-hide').on('click',function(){
     $('.text-exposed-hide').hide();
     $('.text-exposed-show').show();
 });
 
-
-// $('li.alertMenu a').on('click', function (event) {
-//     $(this).parent().toggleClass("open");
-// });
-
-// $('body').on('click', function (e) {
-//     if (!$('li.alertMenu').is(e.target) && $('li.alertMenu').has(e.target).length === 0 && $('.open').has(e.target).length === 0) {
-//         $('li.alertMenu').removeClass('open');
-//     }
-// });
+//goTop
+$(window).on('scroll' , function(){
+    // console.log($(window).scrollTop())
+    if ( $(window).scrollTop() > 300){
+        if( $('#goTop').length == 0){
+            $('body').append('<a href="javascript:void(0);" id="goTop" style="display: none;"></a>');
+            $("#goTop").on('click', function() {
+                $('body').animate({ scrollTop: 0} , 500);
+            });
+        }
+        $('#goTop').fadeIn(300);
+    }
+    else{
+        $('#goTop').fadeOut(300);
+    }
+});

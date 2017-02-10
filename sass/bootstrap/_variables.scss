@@ -403,7 +403,7 @@ $container-tablet:             (570px + $grid-gutter-width) !default;
 $container-sm:                 $container-tablet !default;
 
 // Medium screen / desktop
-$container-desktop:            (940px + ($grid-gutter-width * 2) ) !default;
+$container-desktop:            (840px + ($grid-gutter-width * 2) ) !default;
 //** For `$screen-md-min` and up.
 $container-md:                 $container-desktop !default;
 
